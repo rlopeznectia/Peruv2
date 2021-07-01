@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>1.MQL – Nuevo</fullName>
+        <default>true</default>
+        <label>1.MQL – Nuevo</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>2.MQL – Abierto</fullName>
+        <default>false</default>
+        <label>2.MQL – Abierto</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>3.MQL - En Progreso</fullName>
+        <default>false</default>
+        <label>3.MQL - En Progreso</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>4.Remarketing</fullName>
+        <default>false</default>
+        <label>4.Remarketing</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>5.SQL</fullName>
+        <default>false</default>
+        <label>5.SQL</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>6.Descartado</fullName>
+        <default>false</default>
+        <label>6.Descartado</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>7.Convertido</fullName>
+        <default>false</default>
+        <label>7.Convertido</label>
+        <converted>true</converted>
+    </standardValue>
+</StandardValueSet>

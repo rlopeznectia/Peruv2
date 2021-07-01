@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "orgName": "Demo company",
   "edition": "Developer",
   "features": ["EnableSetPasswordInApi"],
@@ -10,4 +11,11 @@
       "enableS1EncryptedStoragePref2": false
     }
   }
+=======
+    "orgName": "Sodexo",
+    "edition": "Developer",
+    "orgPreferences" : {
+        "enabled": ["S1DesktopEnabled"]
+    }
+>>>>>>> 7e8cd62b42546fb8a525f4ba0115e6a31ef2d562
 }

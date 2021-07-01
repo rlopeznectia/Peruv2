@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Cliente nuevo</fullName>
+        <default>false</default>
+        <label>Cliente nuevo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Merchant nuevo</fullName>
+        <default>false</default>
+        <label>Merchant nuevo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cross selling</fullName>
+        <default>false</default>
+        <label>Cross selling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Up selling</fullName>
+        <default>false</default>
+        <label>Up selling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Renovación</fullName>
+        <default>false</default>
+        <label>Renovación</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Licitación</fullName>
+        <default>false</default>
+        <label>Licitación</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reactivación</fullName>
+        <default>false</default>
+        <label>Reactivación</label>
+    </standardValue>
+</StandardValueSet>

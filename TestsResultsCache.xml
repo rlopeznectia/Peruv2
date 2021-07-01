@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestsResultsCache
+    LastClearTime="0001-01-01T00:00:00">
+    <TestClassesCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2giAAC</TestClassId>
+            <TestQueueId>7090m000001805GAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m000001805HAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test10</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test11</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test12</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test13</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test14</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test15</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test16</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test5</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test6</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test7</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test8</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test9</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2giAAC</TestClassId>
+            <TestQueueId>7090m000001805BAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m000001805CAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test10</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test11</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test12</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test13</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test14</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test15</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test16</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test5</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test6</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test7</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test8</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test9</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m0000018056AAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test17</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m0000018051AAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test17</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m000001804wAAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test17</Name>
+                    <Message>System.AssertException: Assertion Failed: true</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.WsContrato_Controller_Test17: line 692, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2giAAC</TestClassId>
+            <TestQueueId>7090m000001804YAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m000001804XAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test10</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test11</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test12</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test13</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test14</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test15</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test16</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test5</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test6</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test7</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test8</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test9</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m000001804TAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test1</Name>
+                    <Message>System.DmlException: Update failed. First exception on row 0 with id 0010m00000ipDFmAAM; first error: REQUIRED_FIELD_MISSING, Faltan campos obligatorios: [Name]: [Name]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.WsContrato_Controller_Test1: line 242, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test10</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test11</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test12</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test13</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test14</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test15</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test16</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test5</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test6</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test7</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test8</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test9</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2giAAC</TestClassId>
+            <TestQueueId>7090m000001804SAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2giAAC</TestClassId>
+            <TestQueueId>7090m000001804NAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m000001804OAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test10</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test11</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test12</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test13</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test14</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test15</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test16</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test5</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test6</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test7</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test8</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test9</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2giAAC</TestClassId>
+            <TestQueueId>7090m000001804JAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m000001804IAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test10</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test11</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test12</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test13</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test14</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test15</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test16</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test5</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test6</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test7</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test8</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test9</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m000001804DAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test2</Name>
+                    <Message>System.DmlException: Update failed. First exception on row 0 with id 0010m00000ipDEtAAM; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, AC00001: El largo del número de documento(RUC) debe ser de 11 caracteres.: []</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.WsContrato_Controller_Test2: line 279, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test3</Name>
+                    <Message>System.DmlException: Update failed. First exception on row 0 with id 0010m00000ipDEtAAM; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, AC00001: El largo del número de documento(RUC) debe ser de 11 caracteres.: []</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.WsContrato_Controller_Test3: line 325, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test4</Name>
+                    <Message>System.DmlException: Update failed. First exception on row 0 with id 0010m00000ipDEtAAM; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, AC00001: El largo del número de documento(RUC) debe ser de 11 caracteres.: []</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.WsContrato_Controller_Test4: line 361, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test10</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test11</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test12</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test13</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test14</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test15</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test16</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test5</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test6</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test7</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test8</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test9</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2giAAC</TestClassId>
+            <TestQueueId>7090m000001804EAAQ</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m0000018048AAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test1</Name>
+                    <Message>System.DmlException: Update failed. First exception on row 0 with id 0010m00000ipDEPAA2; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, AC00001: El largo del número de documento(RUC) debe ser de 11 caracteres.: []</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.WsContrato_Controller_Test1: line 240, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test2</Name>
+                    <Message>System.DmlException: Update failed. First exception on row 0 with id 0010m00000ipDEPAA2; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, AC00001: El largo del número de documento(RUC) debe ser de 11 caracteres.: []</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.WsContrato_Controller_Test2: line 279, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test3</Name>
+                    <Message>System.DmlException: Update failed. First exception on row 0 with id 0010m00000ipDEPAA2; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, AC00001: El largo del número de documento(RUC) debe ser de 11 caracteres.: []</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.WsContrato_Controller_Test3: line 325, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test4</Name>
+                    <Message>System.DmlException: Update failed. First exception on row 0 with id 0010m00000ipDEPAA2; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, AC00001: El largo del número de documento(RUC) debe ser de 11 caracteres.: []</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.WsContrato_Controller_Test4: line 361, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test10</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test11</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test12</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test13</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test14</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test15</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test16</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test5</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test6</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test7</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test8</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test9</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2giAAC</TestClassId>
+            <TestQueueId>7090m0000018049AAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m0000018043AAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test1</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test10</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test11</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test12</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test13</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test14</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test15</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test16</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test2</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test3</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test4</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test5</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test6</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test7</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test8</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test9</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 205, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2giAAC</TestClassId>
+            <TestQueueId>7090m0000018044AAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m000001803yAAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test1</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test10</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test11</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test12</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test13</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test14</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test15</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test16</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test2</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test3</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test4</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test5</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test6</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test7</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test8</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test9</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 27: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2giAAC</TestClassId>
+            <TestQueueId>7090m000001803zAAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m000001803uAAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test1</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test10</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test11</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test12</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test13</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test14</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test15</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test16</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test2</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test3</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test4</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test5</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test6</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test7</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test8</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test9</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2giAAC</TestClassId>
+            <TestQueueId>7090m000001803tAAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test2</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test3</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test4</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2giAAC</TestClassId>
+            <TestQueueId>7090m000001803qAAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>test_TokenResponse_Class_Test1</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01p0m000003R2uGAAS</TestClassId>
+            <TestQueueId>7090m000001803mAAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test1</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test10</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test11</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test12</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test13</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test14</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test15</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test16</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test2</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test3</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test4</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test5</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test6</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test7</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test8</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+                <TestMethodCache>
+                    <Name>WsContrato_Controller_Test9</Name>
+                    <Message>System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, valor inapropiado para el campo de lista de selección restringida: 25: [Producto_Sodexo_Agil__c]</Message>
+                    <StackTrace>Class.SDXAGIL_WsContrato_Controller_Test.setup: line 204, column 1</StackTrace>
+                    <TestResultStatus>Fail</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+    </TestClassesCache>
+    <DeletedJobsIds />
+</TestsResultsCache>

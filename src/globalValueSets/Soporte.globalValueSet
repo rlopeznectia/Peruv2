@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Vale Físico y Virtual</fullName>
+        <default>true</default>
+        <label>Vale Físico y Virtual</label>
+    </customValue>
+    <customValue>
+        <fullName>Vale Físico</fullName>
+        <default>false</default>
+        <label>Vale Físico</label>
+    </customValue>
+    <customValue>
+        <fullName>Vale Virtual</fullName>
+        <default>false</default>
+        <label>Vale Virtual</label>
+    </customValue>
+    <masterLabel>Soporte</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
