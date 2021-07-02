@@ -2,6 +2,18 @@
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <enableEnhancedLookup>false</enableEnhancedLookup>
     <fields>
+        <fullName>BV_Mensual__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>BV Mensual</inlineHelpText>
+        <label>BV Mensual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>Carga_Media__c</fullName>
         <externalId>false</externalId>
         <formula>BV_Mensual__c / N_de_Beneficiarios__c</formula>
@@ -157,58 +169,6 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Requiere_Aprobaci_n_Finanzas__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF(SBQQ__LineItemCount__c &gt; 0, 
-
-    OR(  Dias_de_Credito__c &gt;0 ,  aprobacion_Comision_Min__c &lt;=0), 
-
-    false)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>Indica si se requiere Aprobación de FInanzas. Se utiliza como criterio de entrada y validación del proceso de aprobación cliente.</inlineHelpText>
-        <label>Requiere Aprobación Finanzas</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Requiere_Aprobacion_Comercial__c</fullName>
-        <description>formula anterior: OR(  Carga_Media__c &lt;100 , aprobacion_Premium_Vigencia_Max__c &gt;=11, aprobacion_Vigencia_No_Premium_Max__c &gt;=6)</description>
-        <externalId>false</externalId>
-        <formula>if( and(SBQQ__LineItemCount__c  &gt; 0 , Tipo_Oportunidad__c = &apos;Cliente&apos; ),
-
-
-or(
-    Carga_Media__c &lt;100,
-
-    and( Vigencia__c &gt;=6,   SBQQ__Opportunity2__r.Frecuencia_f__c  = &apos;NoRecurrente&apos;),
-
-    and(Vigencia__c &gt;=11,  SBQQ__Opportunity2__r.Frecuencia_f__c = &apos;Recurrente&apos;, ISPICKVAL(SBQQ__Opportunity2__r.SDX_Segmento__c, &apos;EXTERNAL ESTIMULATION&apos;)),
-   
-    aprobacion_Comision_Min__c &lt;=0
-
-) ,
-false)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>Criterio de entrada para Aprobacion Comercial</inlineHelpText>
-        <label>Requiere Aprobación Comercial</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Requiere_Aprobacion_Comision__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF(SBQQ__LineItemCount__c &gt; 0,
-aprobacion_Comision_Min__c &lt;=0,
-false)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Requiere Aprobación Comisión</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Requiere_Aprobacion_Dias_Credito__c</fullName>
         <externalId>false</externalId>
         <formula>IF(SBQQ__LineItemCount__c &gt; 0,
@@ -241,20 +201,6 @@ false)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <inlineHelpText>Devuelve True si el campo Descuento Manager Comercial es mayor que cero. Esto indica que hay lineas de la cotización que tiene campo Precio Negociado inferior al maximo de descuento permitido sin aprobación de Manager Comercial</inlineHelpText>
         <label>Requiere Aprobación Manager Comercial</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Requiere_Aprobacion_Marketing_Merchants__c</fullName>
-        <description>Devuelve si existen lineas con comisión menor o igual 2, valor necesario para requerir Aprobación de Marketing</description>
-        <externalId>false</externalId>
-        <formula>IF( and(SBQQ__LineItemCount__c &gt;0,  Tipo_Oportunidad__c =&apos;Merchant&apos;) , 
-  aprobacion_Comision_Min__c &lt;= 2, 
-  false)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>Devuelve si existen lineas con comisión menor o igual 2, valor necesario para requerir Aprobación de Marketing</inlineHelpText>
-        <label>Requiere Aprobación Marketing (Merchant)</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -323,22 +269,6 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>aprobacion_Descuento_Manager_Comercial__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Indica si hay lineas en la Cotización que superan el limite de descuento sin aprobación</inlineHelpText>
-        <label>Descuento Manager Comercial</label>
-        <summaryFilterItems>
-            <field>SBQQ__QuoteLine__c.Requiere_Aprobacion_Manager_Comercial__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </summaryFilterItems>
-        <summaryForeignKey>SBQQ__QuoteLine__c.SBQQ__Quote__c</summaryForeignKey>
-        <summaryOperation>count</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Summary</type>
     </fields>
     <validationRules>
         <fullName>QT001_InterlocutorMandatorio</fullName>

@@ -5,6 +5,7 @@
         <name>CompactLayout</name>
     </types>
     <types>
+        <members>SBQQ__Quote__c.BV_Mensual__c</members>
         <members>SBQQ__Quote__c.Carga_Media__c</members>
         <members>SBQQ__Quote__c.Dias_de_Credito__c</members>
         <members>SBQQ__Quote__c.EditLinesFieldSetName__c</members>
@@ -17,20 +18,14 @@
         <members>SBQQ__Quote__c.Nombre_del_Tipo_de_Registro_de_la_Oppty__c</members>
         <members>SBQQ__Quote__c.Precio_Negociado__c</members>
         <members>SBQQ__Quote__c.Quote_Aprobado__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobaci_n_Finanzas__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Comercial__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Comision__c</members>
         <members>SBQQ__Quote__c.Requiere_Aprobacion_Dias_Credito__c</members>
         <members>SBQQ__Quote__c.Requiere_Aprobacion_Finanzas_Merchant__c</members>
         <members>SBQQ__Quote__c.Requiere_Aprobacion_Manager_Comercial__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Marketing_Merchants__c</members>
-        <members>SBQQ__Quote__c.SDX_BV_mensual__c</members>
         <members>SBQQ__Quote__c.Segmento__c</members>
         <members>SBQQ__Quote__c.TemplateAccountName__c</members>
         <members>SBQQ__Quote__c.Tipo_Oportunidad__c</members>
         <members>SBQQ__Quote__c.Total__c</members>
         <members>SBQQ__Quote__c.Vigencia__c</members>
-        <members>SBQQ__Quote__c.aprobacion_Descuento_Manager_Comercial__c</members>
         <name>CustomField</name>
     </types>
     <types>
