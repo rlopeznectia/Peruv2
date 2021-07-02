@@ -42,6 +42,11 @@
         <name>Layout</name>
     </types>
     <types>
+        <members>Nueva_Oportunidad_Cliente</members>
+        <members>Nueva_Oportunidad_Merchant</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
         <members>AccountOwnership</members>
         <members>AccountRating</members>
         <members>Industry</members>
