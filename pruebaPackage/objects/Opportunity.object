@@ -58,6 +58,15 @@
             <default>false</default>
         </values>
     </businessProcesses>
+    <compactLayouts>
+        <fullName>New_Awesome_Companct_Layout</fullName>
+        <fields>Name</fields>
+        <fields>AccountId</fields>
+        <fields>CloseDate</fields>
+        <fields>Amount</fields>
+        <fields>OwnerId</fields>
+        <label>New Awesome Compact Layout</label>
+    </compactLayouts>
     <fields>
         <fullName>BV_Anual__c</fullName>
         <externalId>false</externalId>
