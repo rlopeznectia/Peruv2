@@ -42,10 +42,6 @@
         <name>Layout</name>
     </types>
     <types>
-        <members>Contract.Sodexo_Agil</members>
-        <name>QuickAction</name>
-    </types>
-    <types>
         <members>ContractStatus</members>
         <name>StandardValueSet</name>
     </types>
