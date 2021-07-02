@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Images/sodexo_logo_png</members>
-        <members>SharedDocuments/</members>
+        <members>SharedDocuments</members>
         <members>SharedDocuments/AceptacionPopuesta</members>
         <members>SharedDocuments/DatosContacto</members>
         <members>SharedDocuments/LICITACION_CARD</members>
@@ -11,9 +10,9 @@
         <members>SharedDocuments/LICITACION_HAND</members>
         <members>SharedDocuments/LICITACION_Heart</members>
         <members>SharedDocuments/LICITACION_LOTCARDS</members>
-        <members>SharedDocuments/LICITACION_Nuestra Experiencia</members>
+        <members>SharedDocuments/LICITACION_Nuestra_Experiencia</members>
         <members>SharedDocuments/LICITACION_OFERTA</members>
-        <members>SharedDocuments/LICITACION_PROPUESTA VALOR</members>
+        <members>SharedDocuments/LICITACION_PROPUESTA_VALOR</members>
         <members>SharedDocuments/LICITACION_RSE</members>
         <members>SharedDocuments/LogoFoodPass</members>
         <members>SharedDocuments/LogoUtilesEsclaresPass</members>
