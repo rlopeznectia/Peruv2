@@ -21,12 +21,12 @@
         <name>FlexiPage</name>
     </types>
     <types>
-        <members>Contact-Cliente_Contacto_Layout</members>
-        <members>Contact-Merchant_Contacto_Layout</members>
+        <members>Contact-Cliente Contacto Layout</members>
+        <members>Contact-Merchant Contacto Layout</members>
         <name>Layout</name>
     </types>
     <types>
-        <members>AccountSource</members>
+        <members>LeadSource</members>
         <name>StandardValueSet</name>
     </types>
     <types>
