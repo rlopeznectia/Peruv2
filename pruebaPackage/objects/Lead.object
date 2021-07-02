@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessProcesses>
+        <fullName>Cliente</fullName>
+        <description>Tipo de registro que especifica los candidatos para el tipo de registro Cliente</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>1%2EMQL %E2%80%93 Nuevo</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>2%2EMQL %E2%80%93 Abierto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2EMQL - En Progreso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2ERemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2ESQL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2EDescartado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2EConvertido</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>Merchant</fullName>
+        <description>Tipo de registro que especifica los candidatos para el tipo de registro Merchant</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>1%2EMQL %E2%80%93 Nuevo</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>2%2EMQL %E2%80%93 Abierto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2EMQL - En Progreso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2ERemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2ESQL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2EDescartado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2EConvertido</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
     <fields>
         <fullName>SDX_Zona__c</fullName>
         <externalId>false</externalId>
