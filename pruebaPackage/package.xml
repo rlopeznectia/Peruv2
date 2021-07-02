@@ -9,7 +9,6 @@
         <members>SBQQ__Quote__c.Dias_de_Credito__c</members>
         <members>SBQQ__Quote__c.EditLinesFieldSetName__c</members>
         <members>SBQQ__Quote__c.Frecuencia__c</members>
-        <members>SBQQ__Quote__c.Frecuencia_de_Reembolsos__c</members>
         <members>SBQQ__Quote__c.Gestion__c</members>
         <members>SBQQ__Quote__c.IGV__c</members>
         <members>SBQQ__Quote__c.LogoProducto__c</members>
@@ -26,24 +25,17 @@
         <members>SBQQ__Quote__c.Requiere_Aprobacion_Manager_Comercial__c</members>
         <members>SBQQ__Quote__c.Requiere_Aprobacion_Marketing_Merchants__c</members>
         <members>SBQQ__Quote__c.SDX_BV_mensual__c</members>
-        <members>SBQQ__Quote__c.SDX_Total_carga__c</members>
         <members>SBQQ__Quote__c.Segmento__c</members>
         <members>SBQQ__Quote__c.TemplateAccountName__c</members>
         <members>SBQQ__Quote__c.Tipo_Oportunidad__c</members>
         <members>SBQQ__Quote__c.Total__c</members>
         <members>SBQQ__Quote__c.Vigencia__c</members>
-        <members>SBQQ__Quote__c.aprobacion_Comision_Min__c</members>
         <members>SBQQ__Quote__c.aprobacion_Descuento_Manager_Comercial__c</members>
         <name>CustomField</name>
     </types>
     <types>
         <members>Quote_P_gina_de_registro</members>
         <name>FlexiPage</name>
-    </types>
-    <types>
-        <members>SBQQ__Quote__c-Cliente_Layout</members>
-        <members>SBQQ__Quote__c-Merchant_Layout</members>
-        <name>Layout</name>
     </types>
     <types>
         <members>SBQQ__Quote__c.QT001_InterlocutorMandatorio</members>

@@ -260,17 +260,6 @@ false)</formula>
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>SDX_Total_carga__c</fullName>
-        <externalId>false</externalId>
-        <label>Total carga</label>
-        <summarizedField>SBQQ__QuoteLine__c.SDX_BV_mensual__c</summarizedField>
-        <summaryForeignKey>SBQQ__QuoteLine__c.SBQQ__Quote__c</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Summary</type>
-    </fields>
-    <fields>
         <fullName>Segmento__c</fullName>
         <description>Se utiliza para el Quote Process</description>
         <externalId>false</externalId>
@@ -334,23 +323,6 @@ false)</formula>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>aprobacion_Comision_Min__c</fullName>
-        <externalId>false</externalId>
-        <inlineHelpText>Indica el menos valor para la Comisión aplicada en la Cotización. Se utiliza para los criterios de entrada del proceso de Aprobación Cliente.</inlineHelpText>
-        <label>Comisión Min</label>
-        <summarizedField>SBQQ__QuoteLine__c.Precio_Negociado__c</summarizedField>
-        <summaryFilterItems>
-            <field>SBQQ__QuoteLine__c.ProductCode_Field__c</field>
-            <operation>equals</operation>
-            <value>CARGO_POR_SERVICIO</value>
-        </summaryFilterItems>
-        <summaryForeignKey>SBQQ__QuoteLine__c.SBQQ__Quote__c</summaryForeignKey>
-        <summaryOperation>min</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Summary</type>
     </fields>
     <fields>
         <fullName>aprobacion_Descuento_Manager_Comercial__c</fullName>
