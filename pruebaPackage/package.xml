@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>SBQQ__ProductOption__c.Dias_de_Credito__c</members>
-        <members>SBQQ__ProductOption__c.Frecuencia__c</members>
-        <members>SBQQ__ProductOption__c.Frecuencia_de_Reembolsos__c</members>
-        <members>SBQQ__ProductOption__c.Metodo_de_Reembolso__c</members>
-        <members>SBQQ__ProductOption__c.Precio_Emisi_n__c</members>
-        <members>SBQQ__ProductOption__c.Soporte__c</members>
-        <members>SBQQ__ProductOption__c.Vigencia__c</members>
-        <name>CustomField</name>
+        <members>Account-Cliente Account Layout</members>
+        <members>Account-Merchant Account Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Account.Nueva_Oportunidad_Cliente</members>
+        <members>Account.Nueva_Oportunidad_Merchant</members>
+        <name>QuickAction</name>
     </types>
     <version>52.0</version>
 </Package>
