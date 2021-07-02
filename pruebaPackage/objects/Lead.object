@@ -1,349 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <compactLayouts>
-        <fullName>Leads_Custom_Compact_Layout</fullName>
-        <fields>Name</fields>
-        <fields>Company</fields>
-        <fields>Title</fields>
-        <fields>Phone</fields>
-        <fields>MobilePhone</fields>
-        <fields>Email</fields>
-        <label>Leads Custom Compact Layout</label>
-    </compactLayouts>
-    <compactLayouts>
-        <fullName>SDX_LeadsClienteCustomCompactLayout</fullName>
-        <fields>Company</fields>
-        <fields>SDX_Segmento__c</fields>
-        <fields>SDX_Producto__c</fields>
-        <fields>Servicio__c</fields>
-        <label>Leads Cliente Custom Compact Layout</label>
-    </compactLayouts>
-    <compactLayouts>
-        <fullName>SDX_LeadsMerchantCustomCompactLayout</fullName>
-        <fields>Company</fields>
-        <fields>SDX_GiroNegocioMerchant__c</fields>
-        <fields>SDX_NombreComercial__c</fields>
-        <label>Leads Merchant Custom Compact Layout</label>
-    </compactLayouts>
-    <recordTypes>
-        <fullName>Cliente</fullName>
-        <active>true</active>
-        <businessProcess>Cliente</businessProcess>
-        <compactLayoutAssignment>SDX_LeadsClienteCustomCompactLayout</compactLayoutAssignment>
-        <description>Tipo de registro para proceso comercial de Cliente</description>
-        <label>Cliente</label>
-        <picklistValues>
-            <picklist>Industry</picklist>
-            <values>
-                <fullName>Government</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Privado</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>LeadSource</picklist>
-            <values>
-                <fullName>Autogestión</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Inbound</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outbound</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Name</picklist>
-            <values>
-                <fullName>Dr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mrs%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ms%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prof%2E</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Rating</picklist>
-            <values>
-                <fullName>Cold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hot</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Warm</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
-    <recordTypes>
-        <fullName>Merchant</fullName>
-        <active>true</active>
-        <businessProcess>Merchant</businessProcess>
-        <compactLayoutAssignment>SDX_LeadsMerchantCustomCompactLayout</compactLayoutAssignment>
-        <description>Tipo de registro para proceso comercial de Merchant</description>
-        <label>Merchant</label>
-        <picklistValues>
-            <picklist>Industry</picklist>
-            <values>
-                <fullName>Government</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Privado</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>LeadSource</picklist>
-            <values>
-                <fullName>Autogestión</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Inbound</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Outbound</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Name</picklist>
-            <values>
-                <fullName>Dr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mr%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mrs%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ms%2E</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prof%2E</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Rating</picklist>
-            <values>
-                <fullName>Cold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hot</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Warm</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
-    <validationRules>
-        <fullName>CA001_Validacion_Telefono_Int</fullName>
-        <active>true</active>
-        <description>Valida formato internacional del telefono</description>
-        <errorConditionFormula>NOT(ISBLANK(Phone))  &amp;&amp;  
-LEFT(Phone, 1) &lt;&gt; &quot;+&quot;</errorConditionFormula>
-        <errorDisplayField>Phone</errorDisplayField>
-        <errorMessage>CA001: El número de teléfono móvil del candidato debe comenzar con + (código de país).</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CA002_Validacion_Tel_Movil_Int</fullName>
-        <active>true</active>
-        <description>El número de teléfono móvil del candidato debe comenzar con + (código de país).</description>
-        <errorConditionFormula>NOT(ISBLANK(MobilePhone)) &amp;&amp;
-LEFT(MobilePhone, 1) &lt;&gt; &quot;+&quot;</errorConditionFormula>
-        <errorDisplayField>MobilePhone</errorDisplayField>
-        <errorMessage>CA002: El número de teléfono móvil debe comenzar con + seguido del código de país.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CA003_ValidacionDescarte</fullName>
-        <active>true</active>
-        <description>Valida que el motivo sea ingresado cuando el estado pase a ser &quot;&quot;No Convertido&quot;&quot;</description>
-        <errorConditionFormula>AND( NOT(ISNEW()),
-TEXT(Status)=&apos;6.Descartado&apos;,
-ISBLANK (TEXT(SDX_MotivoNoConversion__c)))</errorConditionFormula>
-        <errorDisplayField>SDX_MotivoNoConversion__c</errorDisplayField>
-        <errorMessage>CA003: Debe indicar el campo &quot;Motivo de descarte&quot;.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CA004_Valida_Estado_Convertido</fullName>
-        <active>true</active>
-        <description>Valida el candidato si no estaba previamente en el estado 5.SQL</description>
-        <errorConditionFormula>IF(
-AND(
-IsConverted = TRUE,
-OR(
-TEXT(PRIORVALUE(Status)) = &quot;1.MQL – Nuevo&quot;,
-TEXT(PRIORVALUE(Status)) = &quot;2.MQL – Abierto&quot;,
-TEXT(PRIORVALUE(Status)) = &quot;3.MQL - En Progreso&quot;,
-TEXT(PRIORVALUE(Status)) = &quot;6.Descartado&quot;,
-TEXT(PRIORVALUE(Status)) = &quot;4.Remarketing&quot;)),
-true, false)</errorConditionFormula>
-        <errorMessage>CA004: No puede transformar el candidato si previamente no estaba en etapa: 5.SQL</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CA005_Campos_MQL</fullName>
-        <active>false</active>
-        <errorConditionFormula>IF(
-				AND(
-								OR(
-												ISPICKVAL(Status, &quot;3.MQL - En Progreso&quot;)
-											),
-								ISBLANK(TEXT(SDX_Area__c)),
-								ISBLANK(TEXT(SDX_Puesto__c)), 
-								ISBLANK(Email),
-								OR(
-												ISBLANK(Phone),
-												ISBLANK(MobilePhone)
-												)
-								),
-				TRUE, FALSE
-				)</errorConditionFormula>
-        <errorMessage>CA005: No puedes avanzar a MQL Abierto/En Progreso si aún no completas los datos de Área, Puesto, Email y al menos un número de teléfono.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CA005_TelefonoObligatorioClientes</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-				RecordType.Name = &apos;Cliente&apos;,
-				ISPICKVAL(Status, &quot;5.SQL&quot;),
-				ISBLANK(Phone),
-    ISBLANK(MobilePhone))</errorConditionFormula>
-        <errorMessage>CA005: Para pasar a SQL debes completar al menos un número de teléfono.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CA006_SQLCliente</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-				RecordType.Name = &apos;Cliente&apos;,
-				ISPICKVAL(Status, &quot;5.SQL&quot;),
-				OR(
-								ISBLANK(TEXT(SDX_Segmento__c)),
-        ISBLANK(TEXT(SDX_Producto__c )),
-        ISBLANK(NumberOfEmployees),
-        ISBLANK(TEXT(SDX_Departamento__c)),
-        ISBLANK(TEXT(SDX_Provincia__c)),
-								ISBLANK(TEXT(SDX_Area__c)),
-								ISBLANK(TEXT(SDX_Puesto__c)), 
-								ISBLANK(Email)
-								)
-				)</errorConditionFormula>
-        <errorMessage>CA006: Debe Validar campos obligatorios para pasar a SQL.
-Segmento, Producto, Número de empleados, Departamento, Provincia, Área, Puesto e Email</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CA007_Conversion</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-RecordType.Name = &apos;Cliente&apos;,
-ISPICKVAL(Status, &quot;7.Convertido&quot;),
-OR(
-								    ISBLANK(SDX_RUC__c),
-								    ISBLANK(TEXT(SDX_Producto__c)),
-											 ISBLANK(SDX_Budget_mensual_estimado__c )
-)
-)</errorConditionFormula>
-        <errorMessage>CA007: No puedes convertir un Candidato sin antes completar, RUC y Producto y Budget Estimado Mensual</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CA008_MedioOrigen</fullName>
-        <active>false</active>
-        <description>Regla que hace obligatorio llenar el campo medio cuando el origen del prospecto esta lleno.</description>
-        <errorConditionFormula>AND(
-				RecordType.DeveloperName = &quot;Cliente&quot;, 
-    NOT(ISBLANK(TEXT(LeadSource))),
-				ISBLANK(TEXT(SDX_Medio__c))
-				)</errorConditionFormula>
-        <errorMessage>CA008: Una vez lleno el campo origen debes indicar el medio.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CA009_MediodeContactoMandatorio</fullName>
-        <active>true</active>
-        <description>Regla que obliga a llenar el correo electrónico o un teléfono.</description>
-        <errorConditionFormula>ISNEW() &amp;&amp; 
-ISBLANK(Phone) &amp;&amp;
-ISBLANK(Email) &amp;&amp;
-ISBLANK(MobilePhone)</errorConditionFormula>
-        <errorMessage>CA009: Debes completar al menos un método de contacto</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CA010_LargoMovil</fullName>
-        <active>true</active>
-        <description>Valida formato internacional del teléfono móvil.</description>
-        <errorConditionFormula>AND(
-				NOT(ISBLANK(MobilePhone)),
-				OR(
-								LEN(MobilePhone) &gt; 12,
-        LEN(MobilePhone) &lt; 10
-				))</errorConditionFormula>
-        <errorDisplayField>MobilePhone</errorDisplayField>
-        <errorMessage>CA010: El número de teléfono móvil debe tener entre 10 y 12 caracteres incluyendo el &quot;+&quot; del formato internacional.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CA011_LargoTelefono</fullName>
-        <active>true</active>
-        <description>Valida formato internacional del telefono</description>
-        <errorConditionFormula>AND(
-				NOT(ISBLANK(Phone)),
-				OR(
-								LEN(Phone) &gt; 12,
-        LEN(Phone) &lt; 10)
-				)</errorConditionFormula>
-        <errorDisplayField>Phone</errorDisplayField>
-        <errorMessage>CA011: El número de teléfono debe tener entre 10 y 12 caracteres incluyendo el &quot;+&quot; del formato internacional.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CA012_SQLMerchant</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(
-				RecordType.Name = &apos;Merchant&apos;,
-				ISPICKVAL(Status, &quot;5.SQL&quot;),
-				OR(
-								ISBLANK(TEXT(SDX_Producto__c )),
-        ISBLANK(NumberOfEmployees),
-        ISBLANK(TEXT(SDX_Departamento__c)),
-        ISBLANK(TEXT(SDX_Provincia__c))
-								)
-				)</errorConditionFormula>
-        <errorMessage>CA012: Debe Validar campos obligatorios para pasar a SQL</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>CA013_CrearEnNuevo</fullName>
-        <active>true</active>
-        <errorConditionFormula>ISNEW() &amp;&amp;
-NOT(ISPICKVAL(Status, &quot;1.MQL – Nuevo&quot;))</errorConditionFormula>
-        <errorMessage>CA013: No puedes crear Candidatos en un estado distinto a Nuevo</errorMessage>
-    </validationRules>
+    <fields>
+        <fullName>SDX_Zona__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(SDX_Departamento__c,
+&quot;Apurímac&quot;, &quot;Sur&quot;,
+&quot;Apurimacuto&quot;, &quot;Sur&quot;,
+&quot;Arequipa&quot;, &quot;Sur&quot;,
+&quot;Ayacucho&quot;, &quot;Sur&quot;,
+&quot;Cusco&quot;, &quot;Sur&quot;,
+&quot;Madre de Dios&quot;, &quot;Sur&quot;,
+&quot;Moquegua&quot;,	&quot;Sur&quot;,
+&quot;Puno&quot;, &quot;Sur&quot;,
+&quot;Tacna&quot;,	&quot;Sur&quot;,
+&quot;Áncash&quot;, &quot;Centro&quot;,
+&quot;Huancavelica&quot;, &quot;Centro&quot;,
+&quot;Huánuco&quot;, &quot;Centro&quot;,
+&quot;Ica&quot;, &quot;Centro&quot;,
+&quot;Junín&quot;, &quot;Centro&quot;,
+&quot;Lima&quot;,	&quot;Centro&quot;,
+&quot;Loreto&quot;,	&quot;Centro&quot;,
+&quot;Pasco&quot;,	&quot;Centro&quot;,
+&quot;Ucayali&quot;,	&quot;Centro&quot;,
+&quot;Amazonas&quot;, &quot;Norte&quot;,
+&quot;Cajamarca&quot;,	&quot;Norte&quot;,
+&quot;La Libertad&quot;,	&quot;Norte&quot;,
+&quot;Lambayeque&quot;,	&quot;Norte&quot;,
+&quot;Piura&quot;,	&quot;Norte&quot;,
+&quot;San Martín&quot;,	&quot;Norte&quot;,
+&quot;Tumbes&quot;,	&quot;Norte&quot;,				
+NULL)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Zona</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
 </CustomObject>
