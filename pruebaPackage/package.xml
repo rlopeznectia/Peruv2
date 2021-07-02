@@ -1,52 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>SBQQ__Quote__c-compacto_quote</members>
+        <members>Account.SDX_Account_Compact_Layout</members>
         <name>CompactLayout</name>
     </types>
     <types>
-        <members>SBQQ__Quote__c.BV_Mensual__c</members>
-        <members>SBQQ__Quote__c.Carga_Media__c</members>
-        <members>SBQQ__Quote__c.Dias_de_Credito__c</members>
-        <members>SBQQ__Quote__c.EditLinesFieldSetName__c</members>
-        <members>SBQQ__Quote__c.Frecuencia__c</members>
-        <members>SBQQ__Quote__c.Gestion__c</members>
-        <members>SBQQ__Quote__c.IGV__c</members>
-        <members>SBQQ__Quote__c.LogoProducto__c</members>
-        <members>SBQQ__Quote__c.Min_Frecuencia_de_Reembolsos__c</members>
-        <members>SBQQ__Quote__c.N_de_Beneficiarios__c</members>
-        <members>SBQQ__Quote__c.Nombre_del_Tipo_de_Registro_de_la_Oppty__c</members>
-        <members>SBQQ__Quote__c.Quote_Aprobado__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobaci_n_Finanzas__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Comercial__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Comision__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Dias_Credito__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Finanzas_Merchant__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Manager_Comercial__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Marketing_Merchants__c</members>
-        <members>SBQQ__Quote__c.SDX_Total_carga__c</members>
-        <members>SBQQ__Quote__c.Segmento__c</members>
-        <members>SBQQ__Quote__c.TemplateAccountName__c</members>
-        <members>SBQQ__Quote__c.Tipo_Oportunidad__c</members>
-        <members>SBQQ__Quote__c.Total__c</members>
-        <members>SBQQ__Quote__c.Vigencia__c</members>
-        <members>SBQQ__Quote__c.aprobacion_Comision_Min__c</members>
-        <members>SBQQ__Quote__c.aprobacion_Descuento_Manager_Comercial__c</members>
+        <members>Account.Correo_facturacion__c</members>
+        <members>Account.Correo_facturacion_adicional__c</members>
+        <members>Account.Direcciones_Principales__c</members>
+        <members>Account.Es_Internacional__c</members>
+        <members>Account.Gestion__c</members>
+        <members>Account.Perfil_Propietario_opcional__c</members>
+        <members>Account.Propietario_opcional__c</members>
+        <members>Account.Recibe_vales__c</members>
+        <members>Account.SDX_Comedor__c</members>
+        <members>Account.SDX_Giro_de_negocio_cliente__c</members>
+        <members>Account.SDX_Giro_de_negocio_merchant__c</members>
+        <members>Account.SDX_Medios_de_pago__c</members>
+        <members>Account.SDX_Mes_cierre_de_presupuesto__c</members>
+        <members>Account.SDX_Nombre_Comercial__c</members>
+        <members>Account.SDX_Nombre_de_competidor__c</members>
+        <members>Account.SDX_Numero_de_documento__c</members>
+        <members>Account.SDX_Politica_incremento_salarial__c</members>
+        <members>Account.SDX_Puntos_de_venta__c</members>
+        <members>Account.SDX_Segmento__c</members>
+        <members>Account.SDX_Segmento_de_merchant__c</members>
+        <members>Account.SDX_Tipo_Administracion__c</members>
+        <members>Account.SDX_Tipo_de_documento__c</members>
+        <members>Account.SDX_Tipo_de_mercado__c</members>
+        <members>Account.SPI_Segment__c</members>
+        <members>Account.Tipo_de_lector__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Quote_P_gina_de_registro</members>
+        <members>Account_Record_Page</members>
         <name>FlexiPage</name>
     </types>
     <types>
-        <members>SBQQ__Quote__c-Cliente_Layout</members>
-        <members>SBQQ__Quote__c-Merchant_Layout</members>
-        <name>Layout</name>
+        <members>AccountOwnership</members>
+        <members>AccountRating</members>
+        <members>Industry</members>
+        <members>LeadSource</members>
+        <name>StandardValueSet</name>
     </types>
     <types>
-        <members>SBQQ__Quote__c.QT001_InterlocutorMandatorio</members>
-        <members>SBQQ__Quote__c.QT002_NumeroEmpleados</members>
-        <members>SBQQ__Quote__c.QT003_ImpideAvanceSinAprobacion</members>
+        <members>Account.AC00001_LargoRUC</members>
         <name>ValidationRule</name>
     </types>
     <version>52.0</version>
