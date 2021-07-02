@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <compactLayouts>
+        <fullName>SDX_Formato_Compacto_Contacto</fullName>
+        <fields>Name</fields>
+        <fields>MobilePhone</fields>
+        <fields>Email</fields>
+        <fields>Title</fields>
+        <label>Formato Compacto Contacto</label>
+    </compactLayouts>
+    <fields>
+        <fullName>Numero_de_Documento__c</fullName>
+        <externalId>false</externalId>
+        <label>Número de Documento</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SDX_Area_cliente__c</fullName>
+        <externalId>false</externalId>
+        <label>Área cliente</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Comercial</fullName>
+                    <default>false</default>
+                    <label>Comercial</label>
+                </value>
+                <value>
+                    <fullName>Recursos Humanos</fullName>
+                    <default>false</default>
+                    <label>Recursos Humanos</label>
+                </value>
+                <value>
+                    <fullName>Logística</fullName>
+                    <default>false</default>
+                    <label>Logística</label>
+                </value>
+                <value>
+                    <fullName>Finanzas - Contabilidad</fullName>
+                    <default>false</default>
+                    <label>Finanzas - Contabilidad</label>
+                </value>
+                <value>
+                    <fullName>Compras</fullName>
+                    <default>false</default>
+                    <label>Compras</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Legal</fullName>
+                    <default>false</default>
+                    <label>Legal</label>
+                </value>
+                <value>
+                    <fullName>Operaciones</fullName>
+                    <default>false</default>
+                    <label>Operaciones</label>
+                </value>
+                <value>
+                    <fullName>Producción - Manofactura</fullName>
+                    <default>false</default>
+                    <label>Producción - Manofactura</label>
+                </value>
+                <value>
+                    <fullName>Otros</fullName>
+                    <default>false</default>
+                    <label>Otros</label>
+                </value>
+                <value>
+                    <fullName>Administración</fullName>
+                    <default>false</default>
+                    <label>Administración</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SDX_Departamento__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(SDX_Distrito__r.SDX_Departamento__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Departamento</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SDX_Distrito__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Distrito</label>
+        <referenceTo>Distrito__c</referenceTo>
+        <relationshipLabel>Contactos</relationshipLabel>
+        <relationshipName>Contactos</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SDX_Genero__c</fullName>
+        <externalId>false</externalId>
+        <label>Género</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Masculino</fullName>
+                    <default>false</default>
+                    <label>Masculino</label>
+                </value>
+                <value>
+                    <fullName>Femenino</fullName>
+                    <default>false</default>
+                    <label>Femenino</label>
+                </value>
+                <value>
+                    <fullName>Otro</fullName>
+                    <default>false</default>
+                    <label>Otro</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SDX_Nivel_de_relacion__c</fullName>
+        <externalId>false</externalId>
+        <label>Nivel de relación</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Con relación</fullName>
+                    <default>false</default>
+                    <label>Con relación</label>
+                </value>
+                <value>
+                    <fullName>Sin relación</fullName>
+                    <default>false</default>
+                    <label>Sin relación</label>
+                </value>
+                <value>
+                    <fullName>Relación débil</fullName>
+                    <default>false</default>
+                    <label>Relación débil</label>
+                </value>
+                <value>
+                    <fullName>No necesario</fullName>
+                    <default>false</default>
+                    <label>No necesario</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SDX_Provincia__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(SDX_Distrito__r.SDX_Provincia__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Provincia</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SDX_Tipo_de_contacto__c</fullName>
+        <externalId>false</externalId>
+        <label>Tipo de contacto</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cliente</fullName>
+                    <default>false</default>
+                    <label>Cliente</label>
+                </value>
+                <value>
+                    <fullName>Merchant</fullName>
+                    <default>false</default>
+                    <label>Merchant</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SDX_Tipo_de_documento__c</fullName>
+        <externalId>false</externalId>
+        <label>Tipo de documento</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DNI</fullName>
+                    <default>false</default>
+                    <label>DNI</label>
+                </value>
+                <value>
+                    <fullName>ID Externo</fullName>
+                    <default>false</default>
+                    <label>ID Externo</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <validationRules>
+        <fullName>CO001_Valida_Genero</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND
+    (
+    NOT(ISNEW()),
+    ISBLANK(TEXT(SDX_Genero__c))
+    )</errorConditionFormula>
+        <errorDisplayField>SDX_Genero__c</errorDisplayField>
+        <errorMessage>CO001: Debe Ingresar Género al editar el contacto</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CO002_ValidaTipoDocumento</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISBLANK(TEXT(SDX_Tipo_de_documento__c))) &amp;&amp; 
+ISBLANK(Numero_de_Documento__c)</errorConditionFormula>
+        <errorDisplayField>Numero_de_Documento__c</errorDisplayField>
+        <errorMessage>CO002: Debes indicar el Número de documento</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CO003_Valida_Genero</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND
+    (
+    NOT(ISNEW()),
+    ISBLANK(TEXT(SDX_Nivel_de_relacion__c))
+    )</errorConditionFormula>
+        <errorDisplayField>SDX_Nivel_de_relacion__c</errorDisplayField>
+        <errorMessage>CO003: Debe especificar un &quot;Nivel de Relación&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CO004_Valida_Area_Cliente</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND
+    (
+    NOT(ISNEW()),
+    ISBLANK(TEXT(SDX_Area_cliente__c))
+    )</errorConditionFormula>
+        <errorDisplayField>SDX_Area_cliente__c</errorDisplayField>
+        <errorMessage>CO004: Debe especificar un &quot;Área de Cliente&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CO005_LargoTelefonoMovil</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(MobilePhone)),
+OR(
+LEN(MobilePhone) &gt; 12,
+LEN(MobilePhone) &lt; 10)
+)</errorConditionFormula>
+        <errorDisplayField>MobilePhone</errorDisplayField>
+        <errorMessage>CO005 Debe ingresar el largo de teléfono correcto  en formato internacional +(código de país)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CO006_LargoTelefono</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(Phone)),
+OR(
+LEN(Phone) &gt; 12,
+LEN(Phone) &lt; 10)
+)</errorConditionFormula>
+        <errorDisplayField>Phone</errorDisplayField>
+        <errorMessage>CO006 Debe ingresar el largo de teléfono correcto  en formato internacional +(código de país)</errorMessage>
+    </validationRules>
+</CustomObject>
