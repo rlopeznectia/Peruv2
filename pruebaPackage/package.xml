@@ -1,39 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>SharedDocuments</members>
-        <members>SharedDocuments/AceptacionPopuesta</members>
-        <members>SharedDocuments/DatosContacto</members>
-        <members>SharedDocuments/LICITACION_CARD</members>
-        <members>SharedDocuments/LICITACION_CONTACTO</members>
-        <members>SharedDocuments/LICITACION_Grupo_Sodexo</members>
-        <members>SharedDocuments/LICITACION_HAND</members>
-        <members>SharedDocuments/LICITACION_Heart</members>
-        <members>SharedDocuments/LICITACION_LOTCARDS</members>
-        <members>SharedDocuments/LICITACION_Nuestra_Experiencia</members>
-        <members>SharedDocuments/LICITACION_OFERTA</members>
-        <members>SharedDocuments/LICITACION_PROPUESTA_VALOR</members>
-        <members>SharedDocuments/LICITACION_RSE</members>
-        <members>SharedDocuments/LogoFoodPass</members>
-        <members>SharedDocuments/LogoUtilesEsclaresPass</members>
-        <members>SharedDocuments/LogoeCommerce</members>
-        <members>SharedDocuments/LogoeVale</members>
-        <members>SharedDocuments/Merchant_BeneficiosRed</members>
-        <members>SharedDocuments/Merchant_Contactanos</members>
-        <members>SharedDocuments/Merchant_Documentos</members>
-        <members>SharedDocuments/Merchant_OfertaServicio</members>
-        <members>SharedDocuments/Merchant_Productos</members>
-        <members>SharedDocuments/Merchant_QuienesSomos</members>
-        <members>SharedDocuments/Merchant_ResponsabilidadSocial</members>
-        <members>SharedDocuments/Merchant_SodexoBeneficios</members>
-        <members>SharedDocuments/Merchant_ValeFisico</members>
-        <members>SharedDocuments/Merchant_ValeVirtual</members>
-        <members>SharedDocuments/OfertayCondiciones</members>
-        <members>SharedDocuments/PropuestaEconomica</members>
-        <members>SharedDocuments/Propuesta_Comercial</members>
-        <members>SharedDocuments/QuienesSomos</members>
-        <members>SharedDocuments/Sodexo_Beneficios</members>
-        <name>Document</name>
+        <members>SDXAGIL_ClientRegistrarResp_JSON</members>
+        <members>SDXAGIL_ConsultasSOQL</members>
+        <members>SDXAGIL_Helper_Class</members>
+        <members>SDXAGIL_MockHttpResponseError</members>
+        <members>SDXAGIL_MockHttpResponseEx</members>
+        <members>SDXAGIL_MockHttpResponseGenerator</members>
+        <members>SDXAGIL_MockHttpResponseGenerator001</members>
+        <members>SDXAGIL_MockHttpResponseToken</members>
+        <members>SDXAGIL_MockHttpResponseTokenError</members>
+        <members>SDXAGIL_TokenResponse_Class</members>
+        <members>SDXAGIL_TokenResponse_Class_Test</members>
+        <members>SDXAGIL_WsContrato_Controller</members>
+        <members>SDXAGIL_WsContrato_Controller_Test</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>SDXAGIL_WsContrato</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomMetadata</name>
     </types>
     <version>52.0</version>
 </Package>
