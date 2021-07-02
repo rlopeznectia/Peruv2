@@ -38,10 +38,6 @@
         <name>FlexiPage</name>
     </types>
     <types>
-        <members>Contract-Contract Layout</members>
-        <name>Layout</name>
-    </types>
-    <types>
         <members>ContractStatus</members>
         <name>StandardValueSet</name>
     </types>
