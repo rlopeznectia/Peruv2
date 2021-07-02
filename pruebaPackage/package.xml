@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>SBQQ__Quote__c-compacto_quote</members>
+        <members>SBQQ__Quote__c.compacto_quote</members>
         <name>CompactLayout</name>
     </types>
     <types>
@@ -15,7 +15,6 @@
         <members>SBQQ__Quote__c.LogoProducto__c</members>
         <members>SBQQ__Quote__c.N_de_Beneficiarios__c</members>
         <members>SBQQ__Quote__c.Nombre_del_Tipo_de_Registro_de_la_Oppty__c</members>
-        <members>SBQQ__Quote__c.Precio_Negociado__c</members>
         <members>SBQQ__Quote__c.Quote_Aprobado__c</members>
         <members>SBQQ__Quote__c.Segmento__c</members>
         <members>SBQQ__Quote__c.TemplateAccountName__c</members>

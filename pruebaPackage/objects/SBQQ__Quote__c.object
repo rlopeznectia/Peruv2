@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <compactLayouts>
+        <fullName>compacto_quote</fullName>
+        <fields>Name</fields>
+        <fields>Tipo_Oportunidad__c</fields>
+        <fields>Segmento__c</fields>
+        <label>compacto quote</label>
+    </compactLayouts>
     <enableEnhancedLookup>false</enableEnhancedLookup>
     <fields>
         <fullName>BV_Mensual__c</fullName>
