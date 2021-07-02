@@ -351,19 +351,6 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>SDX_Budget_mesual_real__c</fullName>
-        <externalId>false</externalId>
-        <formula>SBQQ__PrimaryQuote__r.SDX_Total_carga__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Budget mesual real</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>SDX_BusinessValue__c</fullName>
         <externalId>false</externalId>
         <label>Business Value</label>

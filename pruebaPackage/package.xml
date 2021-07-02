@@ -21,13 +21,12 @@
         <members>Opportunity.Loss_Reason__c</members>
         <members>Opportunity.N_Compras_al_A_o__c</members>
         <members>Opportunity.ROI_Analysis_Completed__c</members>
-        <members>Opportunity.SDX_Budget_mesual_real__c</members>
-        <members>Opportunity.SDX_Businessvalue__c</members>
+        <members>Opportunity.SDX_BusinessValue__c</members>
         <members>Opportunity.SDX_Canal__c</members>
         <members>Opportunity.SDX_Medio__c</members>
         <members>Opportunity.SDX_Medios_de_pago__c</members>
         <members>Opportunity.SDX_NombreComercial__c</members>
-        <members>Opportunity.SDX_Nombre_competencia__c</members>
+        <members>Opportunity.SDX_Nombre_Competencia__c</members>
         <members>Opportunity.SDX_Segmento__c</members>
         <members>Opportunity.SDX_Servicio__c</members>
         <name>CustomField</name>
