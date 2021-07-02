@@ -603,6 +603,11 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		Test.startTest();
 
 		SDXAGIL_ClientRegistrarResp_JSON clase = new SDXAGIL_ClientRegistrarResp_JSON();
+		
+//MJ WAS HERE
+		integer i = clase.EsSatisfactorio;
+		string test_one = clase.ErrorCode;
+		string test_two = clase.Mensaje;
 		clase.message = 'TEST';
 		clase.errors = new List<SDXAGIL_ClientRegistrarResp_JSON.errors>();
 		SDXAGIL_ClientRegistrarResp_JSON.Errors errorClase = new SDXAGIL_ClientRegistrarResp_JSON.Errors();
