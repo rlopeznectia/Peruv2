@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>SDX_Leads_Cliente</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>LeadSource</fieldNames>
+        <fieldNames>SDX_Medio__c</fieldNames>
+        <fieldNames>OwnerId</fieldNames>
+        <info>&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Marketing Quality Lead - Nuevo.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;¡Ya cuentas con lo necesario para partir, &lt;/b&gt;&lt;b&gt;éxito&lt;/b&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;! &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Si obtuviste este Candidato a través de una cola de trabajo debes procurar cambiar el Propietario, con esto, el desafío es tuyo. Luego, debes avanzar a la siguiente etapa del proceso. 2.MQL Abierto.&lt;/li&gt;&lt;li&gt;Si este Candidato es de origen propio, puedes avanzar a la siguiente etapa del proceso. 2.MQL Abierto.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>1.MQL – Nuevo</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>SDX_Provincia__c</fieldNames>
+        <fieldNames>SDX_Departamento__c</fieldNames>
+        <fieldNames>SDX_Area__c</fieldNames>
+        <fieldNames>Title</fieldNames>
+        <fieldNames>SDX_Puesto__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Marketing Quality Lead - Abierto.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;La información es valiosa.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Para conseguir el éxito en esta etapa y aumentar la probabilidad de conversión te hacemos algunas recomendaciones importantes dentro de esta etapa en nuestro proceso.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Registra una actividad ya sea tarea u evento para conocer a nuestro Candidato.&lt;/li&gt;&lt;li&gt;Recuerda registrar la mayor cantidad de información posible.&lt;/li&gt;&lt;li&gt;No pierdas de visibilidad la información de la empresa, también es importante.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>2.MQL – Abierto</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>NumberOfEmployees</fieldNames>
+        <fieldNames>SDX_Segmento__c</fieldNames>
+        <fieldNames>SDX_Producto__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Marketing Quality Lead - En Progreso.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;​&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Conociendo la necesidad.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;​&lt;/p&gt;&lt;p&gt;Es vita en esta etapa del proceso conocer la necesidad de nuestro Lead, tanto de su tamaño como características que nos permitan entregarle una solución que permita satisfacer sus necesidades.&lt;/p&gt;&lt;p&gt;​&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Recuerda que puedes confirmar si este lead fue contactado completando una tarea.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Recuerda registrar la mayor cantidad de información posible.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Etapa SQL: Debes considerar llenar la siguiente información: Segmento, Producto, Número de empleados, Departamento, Provincia, Área, Puesto, Email y un número de contacto.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>3.MQL - En Progreso</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>SDX_Remarkerting__c</fieldNames>
+        <info>&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Remarketing.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;!Gracias por tu esfuerzo!&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Si llegaste hasta acá es porque el lead entregado por Marketing tiene las características para ser nuestro Cliente, pero no se encuentra interesado.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>4.Remarketing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;b&gt;SQL&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;!Enhorabuena! Ya queda poco.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Estás muy cerca de poder convertir el Lead y comenzar un proceso de negociación.&lt;/p&gt;&lt;p&gt;Para ello debes convertir el Candidato, para esto se te solicitará información de carácter obligatoria.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>5.SQL</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>SDX_MotivoNoConversion__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Descartado.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;﻿!Gracias por tu esfuerzo!&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Si llegaste hasta acá es porque el lead no cumplía con lo necesario para ser parte de nuestros Clientes.&lt;/p&gt;&lt;p&gt;Favor indica el motivo de descarte.&lt;/p&gt;</info>
+        <picklistValueName>6.Descartado</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Cliente</recordTypeName>
+</PathAssistant>
