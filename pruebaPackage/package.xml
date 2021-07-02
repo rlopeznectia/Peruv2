@@ -12,6 +12,7 @@
         <members>SDXAGIL_MockHttpResponseTokenError</members>
         <members>SDXAGIL_TokenResponse_Class</members>
         <members>SDXAGIL_TokenResponse_Class_Test</members>
+        <members>SDXAGIL_TokenResponse_JSON</members>
         <members>SDXAGIL_WsContrato_Controller</members>
         <members>SDXAGIL_WsContrato_Controller_Test</members>
         <name>ApexClass</name>
