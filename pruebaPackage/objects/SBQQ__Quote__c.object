@@ -157,30 +157,6 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Requiere_Aprobacion_Dias_Credito__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF(SBQQ__LineItemCount__c &gt; 0,
-			Dias_de_Credito__c &gt;0 ,false)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Requiere Aprobación Días Crédito</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Requiere_Aprobacion_Finanzas_Merchant__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( and(SBQQ__LineItemCount__c &gt;0 , Tipo_Oportunidad__c = &apos;Merchant&apos; ),
-  Min_Frecuencia_de_Reembolsos__c &lt; 5, 
-  false)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>Devuelve si existe una linea de cotización con campo Frecuencia de Reembolsos menor a 5. Esto implica que se requiere Aprobación de FInanzas.</inlineHelpText>
-        <label>Requiere Aprobación Finanzas (Merchant)</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Segmento__c</fullName>
         <description>Se utiliza para el Quote Process</description>
         <externalId>false</externalId>

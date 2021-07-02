@@ -17,8 +17,6 @@
         <members>SBQQ__Quote__c.Nombre_del_Tipo_de_Registro_de_la_Oppty__c</members>
         <members>SBQQ__Quote__c.Precio_Negociado__c</members>
         <members>SBQQ__Quote__c.Quote_Aprobado__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Dias_Credito__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Finanzas_Merchant__c</members>
         <members>SBQQ__Quote__c.Segmento__c</members>
         <members>SBQQ__Quote__c.TemplateAccountName__c</members>
         <members>SBQQ__Quote__c.Tipo_Oportunidad__c</members>
