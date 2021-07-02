@@ -9,5 +9,9 @@
         <members>Sodexo_Per/Optty_AlertaVencimiento</members>
         <name>EmailTemplate</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>Letterhead</name>
+    </types>
     <version>52.0</version>
 </Package>
