@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Sodexo_Per</members>
-        <members>Sodexo_Per/Aprobacion_Cotizaci_n_Cliente</members>
-        <members>Sodexo_Per/Aprobacion_Cotizacion_Merchants</members>
-        <members>Sodexo_Per/AvisoTarea</members>
-        <members>Sodexo_Per/Oppty_AvisoCierreInactividad</members>
-        <members>Sodexo_Per/Optty_AlertaVencimiento</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Letterhead</name>
+        <members>Opportunity.Oppty_AlertaOpptyVencida</members>
+        <members>Opportunity.Oppty_AvisoOpptyInactividad</members>
+        <members>Task.TaskTaraeaVencida</members>
+        <name>WorkflowAlert</name>
     </types>
     <version>52.0</version>
 </Package>
