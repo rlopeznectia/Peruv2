@@ -56,7 +56,7 @@ workflows:
           type: approval
           requires:
             - build
-            #- test
+            - test
       - deploy-prod:
           requires:
            - hold
