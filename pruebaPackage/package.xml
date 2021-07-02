@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>SBQQ__Quote__c.Min_Frecuencia_de_Reembolsos__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobaci_n_Finanzas__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Comercial__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Comision__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Dias_Credito__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Finanzas_Merchant__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Manager_Comercial__c</members>
-        <members>SBQQ__Quote__c.Requiere_Aprobacion_Marketing_Merchants__c</members>
-        <members>SBQQ__Quote__c.SDX_Total_carga__c</members>
-        <members>SBQQ__Quote__c.aprobacion_Comision_Min__c</members>
-        <members>SBQQ__Quote__c.aprobacion_Descuento_Manager_Comercial__c</members>
+        <members>Opportunity.SDX_Budget_mesual_real__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>SBQQ__Quote__c-Cliente Layout</members>
-        <members>SBQQ__Quote__c-Merchant_Layout</members>
+        <members>Opportunity-Cliente</members>
+        <members>Opportunity-Merchant</members>
         <name>Layout</name>
     </types>
     <types>
-        <members>SBQQ__Quote__c.QT003_ImpideAvanceSinAprobacion</members>
-        <name>ValidationRule</name>
+        <members>Opportunity.Nueva_Cotizacion_Merchants</members>
+        <members>Opportunity.Nueva_Quote</members>
+        <name>QuickAction</name>
     </types>
     <version>52.0</version>
 </Package>
