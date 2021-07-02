@@ -49,14 +49,14 @@ workflows:
             branches:
               ignore:
                 - main
-      #- test:
-      #    requires:
-      #      - build
+      - test:
+          requires:
+            - build
       - hold:
           type: approval
           requires:
             - build
-      #      - test
+            - test
       - deploy-prod:
           requires:
            - hold
