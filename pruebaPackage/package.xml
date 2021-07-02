@@ -1,47 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Lead.Leads_Custom_Compact_Layout</members>
-        <members>Lead.SDX_LeadsClienteCustomCompactLayout</members>
-        <members>Lead.SDX_LeadsMerchantCustomCompactLayout</members>
-        <name>CompactLayout</name>
+        <members>Tabla_de_Precios__c.comision__c</members>
+        <members>Tabla_de_Precios__c.descuento_maximo__c</members>
+        <members>Tabla_de_Precios__c.gestion__c</members>
+        <members>Tabla_de_Precios__c.limite_aprobacion__c</members>
+        <members>Tabla_de_Precios__c.productcode__c</members>
+        <members>Tabla_de_Precios__c.producto__c</members>
+        <name>CustomField</name>
     </types>
     <types>
-        <members>Lead_Record_Page</members>
-        <name>FlexiPage</name>
-    </types>
-    <types>
-        <members>Lead-Cliente</members>
-        <members>Lead-Merchant</members>
+        <members>Tabla_de_Precios__c-Formato_Tabla_de_Precios</members>
         <name>Layout</name>
-    </types>
-    <types>
-        <members>Lead.Cliente</members>
-        <members>Lead.Merchant</members>
-        <name>RecordType</name>
-    </types>
-    <types>
-        <members>AccountRating</members>
-        <members>Industry</members>
-        <members>LeadSource</members>
-        <name>StandardValueSet</name>
-    </types>
-    <types>
-        <members>Lead.CA001_Validacion_Telefono_Int</members>
-        <members>Lead.CA002_Validacion_Tel_Movil_Int</members>
-        <members>Lead.CA003_ValidacionDescarte</members>
-        <members>Lead.CA004_Valida_Estado_Convertido</members>
-        <members>Lead.CA005_Campos_MQL</members>
-        <members>Lead.CA005_TelefonoObligatorioClientes</members>
-        <members>Lead.CA006_SQLCliente</members>
-        <members>Lead.CA007_Conversion</members>
-        <members>Lead.CA008_MedioOrigen</members>
-        <members>Lead.CA009_MediodeContactoMandatorio</members>
-        <members>Lead.CA010_LargoMovil</members>
-        <members>Lead.CA011_LargoTelefono</members>
-        <members>Lead.CA012_SQLMerchant</members>
-        <members>Lead.CA013_CrearEnNuevo</members>
-        <name>ValidationRule</name>
     </types>
     <version>52.0</version>
 </Package>
