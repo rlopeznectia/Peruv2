@@ -6,7 +6,6 @@
         <members>SBQQ__QuoteLine__c.Comision_Monto__c</members>
         <members>SBQQ__QuoteLine__c.Comision__c</members>
         <members>SBQQ__QuoteLine__c.Configured_SKU_Product_Code__c</members>
-        <members>SBQQ__QuoteLine__c.CreatedById</members>
         <members>SBQQ__QuoteLine__c.Descuento_Calculado__c</members>
         <members>SBQQ__QuoteLine__c.Dias_de_Credito__c</members>
         <members>SBQQ__QuoteLine__c.Do_not_Run_Price_Rule__c</members>
@@ -18,7 +17,6 @@
         <members>SBQQ__QuoteLine__c.LineaCotizacionMerchant__c</members>
         <members>SBQQ__QuoteLine__c.Metodo_de_Reembolso__c</members>
         <members>SBQQ__QuoteLine__c.N_de_Beneficiarios__c</members>
-        <members>SBQQ__QuoteLine__c.Name</members>
         <members>SBQQ__QuoteLine__c.Precio_Estandar__c</members>
         <members>SBQQ__QuoteLine__c.Precio_Minimo_Sin_Aprobacion__c</members>
         <members>SBQQ__QuoteLine__c.Precio_Negociado__c</members>
@@ -36,10 +34,6 @@
         <members>SBQQ__QuoteLine__c.Total_Comision__c</members>
         <members>SBQQ__QuoteLine__c.Vigencia__c</members>
         <name>CustomField</name>
-    </types>
-    <types>
-        <members>SBQQ__QuoteLine__c-Quote Line Layout</members>
-        <name>Layout</name>
     </types>
     <version>52.0</version>
 </Package>
