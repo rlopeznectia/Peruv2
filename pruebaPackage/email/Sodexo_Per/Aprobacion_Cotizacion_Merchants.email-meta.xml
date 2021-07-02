@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Membrete_Sodexo_Per</letterhead>
+    <name>[Quote] Aprobación Cotización Merchant</name>
+    <style>freeForm</style>
+    <subject>Solicitud de Aprobación de Cotización Merchants</subject>
+    <textOnly>[indicar texto de solicitud de aprobación:]
+
+
+Detalle de la Cotización: {!SBQQ__Quote__c.Link}
+
+campos de ejemplo:
+Cliente: {!SBQQ__Quote__c.SBQQ__Account__c}
+Oportunidad: {!SBQQ__Quote__c.SBQQ__Opportunity2__c}
+
+BV Mensual: {!SBQQ__Quote__c.BV_Mensual__c}
+
+Días de Credito: {!SBQQ__Quote__c.00N0m000006IM2e}
+Vigencia:{!SBQQ__Quote__c.00N0m000006IM2Z}
+Comision: {!SBQQ__Quote__c.aprobacion_Comision_Min__c}
+Carga Media: {!SBQQ__Quote__c.00N0m000006IM3w}
+
+Para aprobar responder este correo con:
+Aprobado
+
+Para rechazar, respoder este correo con:
+Rechazar</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
