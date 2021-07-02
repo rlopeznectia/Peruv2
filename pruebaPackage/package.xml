@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Account-Cliente Account Layout</members>
-        <members>Account-Merchant Account Layout</members>
-        <name>Layout</name>
-    </types>
-    <types>
-        <members>Account.Nueva_Oportunidad_Cliente</members>
-        <members>Account.Nueva_Oportunidad_Merchant</members>
-        <name>QuickAction</name>
+        <members>*</members>
+        <name>Role</name>
     </types>
     <version>52.0</version>
 </Package>
