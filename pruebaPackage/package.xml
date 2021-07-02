@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>SBQQ__Quote__c.Frecuencia_de_Reembolsos__c</members>
         <members>SBQQ__Quote__c.Min_Frecuencia_de_Reembolsos__c</members>
         <members>SBQQ__Quote__c.Requiere_Aprobaci_n_Finanzas__c</members>
         <members>SBQQ__Quote__c.Requiere_Aprobacion_Comercial__c</members>
@@ -16,7 +15,7 @@
         <name>CustomField</name>
     </types>
     <types>
-        <members>SBQQ__Quote__c-Cliente_Layout</members>
+        <members>SBQQ__Quote__c-Cliente Layout</members>
         <members>SBQQ__Quote__c-Merchant_Layout</members>
         <name>Layout</name>
     </types>
