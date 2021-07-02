@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <fields>
+        <fullName>BV_Mensual__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>BV Mensual</inlineHelpText>
+        <label>BV Mensual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Carga_Media__c</fullName>
+        <externalId>false</externalId>
+        <formula>BV_Mensual__c / N_de_Beneficiarios__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>BV Mensual dividido por la Cantidad de Beneficiarios</inlineHelpText>
+        <label>Carga Media</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dias_de_Credito__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Días de credito ofrecidos</inlineHelpText>
+        <label>Días de Crédito</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EditLinesFieldSetName__c</fullName>
+        <externalId>false</externalId>
+        <label>EditLinesFieldSetName</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Line_Editor_Merchants</fullName>
+                    <default>false</default>
+                    <label>Line_Editor_Merchants</label>
+                </value>
+                <value>
+                    <fullName>SBQQ__LineEditor</fullName>
+                    <default>false</default>
+                    <label>SBQQ__LineEditor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Frecuencia__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__Opportunity2__r.Frecuencia_f__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Frecuencia</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Gestion__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__Account__r.Gestion__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Muestra el campo Gestion de la cuenta relacionada para usar como parametro en Tabla de Precios-</inlineHelpText>
+        <label>Gestión</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IGV__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__NetAmount__c * 0.18</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IGV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LogoProducto__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(				 SBQQ__Opportunity2__r.SDX_Segmento__c ,
+
+&quot;FOOD&quot;, &quot;&lt;p&gt;&lt;img height=&apos;128&apos; src=&apos;https://sodexo-brs-peru--uat2--c.documentforce.com/servlet/servlet.ImageServer?id=0150m000000Qo0V&amp;amp;oid=00D0m0000001gRs&amp;amp;lastMod=1620963075000&apos; width=&apos;238&apos; /&gt;&lt;/p&gt;&quot;,
+&quot;MEAL&quot;, &quot;0T_009EAU052127&quot;,
+&quot;EDUCATION&quot;, &quot;&lt;p&gt;&lt;img height=&apos;128&apos; src=&apos;https://sodexo-brs-peru--uat2--c.documentforce.com/servlet/servlet.ImageServer?id=0150m000000Qo0a&amp;oid=00D0m0000001gRs&amp;lastMod=1620963237000&apos; width=&apos;238&apos; /&gt;&lt;/p&gt;&quot;,
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>LogoProducto</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>N_de_Beneficiarios__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Cantidad de beneficiarios</inlineHelpText>
+        <label>Nº de Beneficiarios</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nombre_del_Tipo_de_Registro_de_la_Oppty__c</fullName>
+        <description>Utilizado para seleccionar el PricebookID de la Cotización en Process Builder.</description>
+        <externalId>false</externalId>
+        <formula>SBQQ__Opportunity2__r.RecordType.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Devuelve el nombre del tipo de registro de la Oportunidad. Utilizado para automatizar elección de lista de precio</inlineHelpText>
+        <label>Nombre del Tipo de Registro de la Oppty</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quote_Aprobado__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Quote Aprobado</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Requiere_Aprobacion_Dias_Credito__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(SBQQ__LineItemCount__c &gt; 0,
+			Dias_de_Credito__c &gt;0 ,false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Requiere Aprobación Días Crédito</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Requiere_Aprobacion_Finanzas_Merchant__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( and(SBQQ__LineItemCount__c &gt;0 , Tipo_Oportunidad__c = &apos;Merchant&apos; ),
+  Min_Frecuencia_de_Reembolsos__c &lt; 5, 
+  false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Devuelve si existe una linea de cotización con campo Frecuencia de Reembolsos menor a 5. Esto implica que se requiere Aprobación de FInanzas.</inlineHelpText>
+        <label>Requiere Aprobación Finanzas (Merchant)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Segmento__c</fullName>
+        <description>Se utiliza para el Quote Process</description>
+        <externalId>false</externalId>
+        <formula>text( SBQQ__Opportunity2__r.SDX_Segmento__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Devuelve el Segmento seleccionado en la Oportunidad relacionada a la Quote.</inlineHelpText>
+        <label>Segmento</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TemplateAccountName__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TemplateAccountName</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tipo_Oportunidad__c</fullName>
+        <description>Debe ser un campo de texto que se completa via process Builder. Necesario para Price Rules qu eno puede tomar valores fuera de la Quote o con referencia fuera de la Quote</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tipo de Registro de la oportunidad.</inlineHelpText>
+        <label>Tipo Oportunidad</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__NetAmount__c +  IGV__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Vigencia__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Vigencia en meses de la tarjeta</inlineHelpText>
+        <label>Vigencia</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>QT001_InterlocutorMandatorio</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISNEW() &amp;&amp;
+ISBLANK(SBQQ__Opportunity2__r.Interlocutor__c)</errorConditionFormula>
+        <errorMessage>QT001: Para poder crear la Quote debes primero señalar un Interlocutor en la Oportunidad de origen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>QT002_NumeroEmpleados</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISNEW() &amp;&amp;
+ISBLANK(SBQQ__Account__r.NumberOfEmployees)</errorConditionFormula>
+        <errorMessage>QT002: Para poder crear la Quote debes primero completar el número de empleados en la Cuenta.</errorMessage>
+    </validationRules>
+</CustomObject>
