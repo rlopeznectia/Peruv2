@@ -1,36 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>SBQQ__Quote__c.compacto_quote</members>
-        <name>CompactLayout</name>
-    </types>
-    <types>
-        <members>SBQQ__Quote__c.BV_Mensual__c</members>
-        <members>SBQQ__Quote__c.Carga_Media__c</members>
-        <members>SBQQ__Quote__c.Dias_de_Credito__c</members>
-        <members>SBQQ__Quote__c.EditLinesFieldSetName__c</members>
-        <members>SBQQ__Quote__c.Frecuencia__c</members>
-        <members>SBQQ__Quote__c.Gestion__c</members>
-        <members>SBQQ__Quote__c.IGV__c</members>
-        <members>SBQQ__Quote__c.LogoProducto__c</members>
-        <members>SBQQ__Quote__c.N_de_Beneficiarios__c</members>
-        <members>SBQQ__Quote__c.Nombre_del_Tipo_de_Registro_de_la_Oppty__c</members>
-        <members>SBQQ__Quote__c.Quote_Aprobado__c</members>
-        <members>SBQQ__Quote__c.Segmento__c</members>
-        <members>SBQQ__Quote__c.TemplateAccountName__c</members>
-        <members>SBQQ__Quote__c.Tipo_Oportunidad__c</members>
-        <members>SBQQ__Quote__c.Total__c</members>
-        <members>SBQQ__Quote__c.Vigencia__c</members>
+        <members>SBQQ__QuoteLine__c.Aprobacion__c</members>
+        <members>SBQQ__QuoteLine__c.Carga_Media__c</members>
+        <members>SBQQ__QuoteLine__c.Comision_Monto__c</members>
+        <members>SBQQ__QuoteLine__c.Comision__c</members>
+        <members>SBQQ__QuoteLine__c.Configured_SKU_Product_Code__c</members>
+        <members>SBQQ__QuoteLine__c.CreatedById</members>
+        <members>SBQQ__QuoteLine__c.Descuento_Calculado__c</members>
+        <members>SBQQ__QuoteLine__c.Dias_de_Credito__c</members>
+        <members>SBQQ__QuoteLine__c.Do_not_Run_Price_Rule__c</members>
+        <members>SBQQ__QuoteLine__c.EditLinesFieldSetName__c</members>
+        <members>SBQQ__QuoteLine__c.Field2__c</members>
+        <members>SBQQ__QuoteLine__c.Frecuencia__c</members>
+        <members>SBQQ__QuoteLine__c.Frecuencia_de_Reembolsos__c</members>
+        <members>SBQQ__QuoteLine__c.Info_Adicional__c</members>
+        <members>SBQQ__QuoteLine__c.LineaCotizacionMerchant__c</members>
+        <members>SBQQ__QuoteLine__c.Metodo_de_Reembolso__c</members>
+        <members>SBQQ__QuoteLine__c.N_de_Beneficiarios__c</members>
+        <members>SBQQ__QuoteLine__c.Name</members>
+        <members>SBQQ__QuoteLine__c.Precio_Estandar__c</members>
+        <members>SBQQ__QuoteLine__c.Precio_Minimo_Sin_Aprobacion__c</members>
+        <members>SBQQ__QuoteLine__c.Precio_Negociado__c</members>
+        <members>SBQQ__QuoteLine__c.ProductCode_Field__c</members>
+        <members>SBQQ__QuoteLine__c.Product_Option_Name__c</members>
+        <members>SBQQ__QuoteLine__c.Requiere_Aprobacion_Manager_Comercial__c</members>
+        <members>SBQQ__QuoteLine__c.SBQQ__CarryoverLine__c</members>
+        <members>SBQQ__QuoteLine__c.SBQQ__ChargeType__c</members>
+        <members>SBQQ__QuoteLine__c.SDX_BV_mensual__c</members>
+        <members>SBQQ__QuoteLine__c.Soporte__c</members>
+        <members>SBQQ__QuoteLine__c.Tech_Actual_Tabla_de_Precio__c</members>
+        <members>SBQQ__QuoteLine__c.Tech_Anterior_Descuento__c</members>
+        <members>SBQQ__QuoteLine__c.Tech_Anterior_Valor__c</members>
+        <members>SBQQ__QuoteLine__c.Tech_Ultima_Tabla_de_Precio__c</members>
+        <members>SBQQ__QuoteLine__c.Total_Comision__c</members>
+        <members>SBQQ__QuoteLine__c.Vigencia__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Quote_P_gina_de_registro</members>
-        <name>FlexiPage</name>
-    </types>
-    <types>
-        <members>SBQQ__Quote__c.QT001_InterlocutorMandatorio</members>
-        <members>SBQQ__Quote__c.QT002_NumeroEmpleados</members>
-        <name>ValidationRule</name>
+        <members>SBQQ__QuoteLine__c-Quote Line Layout</members>
+        <name>Layout</name>
     </types>
     <version>52.0</version>
 </Package>
