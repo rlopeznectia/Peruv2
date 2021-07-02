@@ -26,8 +26,8 @@
         <members>Opportunity.SDX_Canal__c</members>
         <members>Opportunity.SDX_Medio__c</members>
         <members>Opportunity.SDX_Medios_de_pago__c</members>
+        <members>Opportunity.SDX_NombreComercial__c</members>
         <members>Opportunity.SDX_Nombre_competencia__c</members>
-        <members>Opportunity.SDX_Nombrecomercial__c</members>
         <members>Opportunity.SDX_Segmento__c</members>
         <members>Opportunity.SDX_Servicio__c</members>
         <name>CustomField</name>
@@ -43,8 +43,8 @@
     </types>
     <types>
         <members>LeadSource</members>
-        <members>StageName</members>
-        <members>Type</members>
+        <members>OpportunityStage</members>
+        <members>OpportunityType</members>
         <name>StandardValueSet</name>
     </types>
     <types>
