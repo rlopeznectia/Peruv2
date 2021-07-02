@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Opportunity.SDX_Budget_mesual_real__c</members>
+        <members>Contact.SDX_Formato_Compacto_Contacto</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
+        <members>Contact.Numero_de_Documento__c</members>
+        <members>Contact.SDX_Area_cliente__c</members>
+        <members>Contact.SDX_Departamento__c</members>
+        <members>Contact.SDX_Distrito__c</members>
+        <members>Contact.SDX_Genero__c</members>
+        <members>Contact.SDX_Nivel_de_relacion__c</members>
+        <members>Contact.SDX_Provincia__c</members>
+        <members>Contact.SDX_Tipo_de_contacto__c</members>
+        <members>Contact.SDX_Tipo_de_documento__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Opportunity-Cliente</members>
-        <members>Opportunity-Merchant</members>
+        <members>Contact_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Contact-Cliente_Contacto_Layout</members>
+        <members>Contact-Merchant_Contacto_Layout</members>
         <name>Layout</name>
     </types>
     <types>
-        <members>Opportunity.Nueva_Cotizacion_Merchants</members>
-        <members>Opportunity.Nueva_Quote</members>
-        <name>QuickAction</name>
+        <members>AccountSource</members>
+        <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>Contact.CO001_Valida_Genero</members>
+        <members>Contact.CO002_ValidaTipoDocumento</members>
+        <members>Contact.CO003_Valida_Genero</members>
+        <members>Contact.CO004_Valida_Area_Cliente</members>
+        <members>Contact.CO005_LargoTelefonoMovil</members>
+        <members>Contact.CO006_LargoTelefono</members>
+        <name>ValidationRule</name>
     </types>
     <version>52.0</version>
 </Package>
