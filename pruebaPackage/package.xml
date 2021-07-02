@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Tabla_de_Precios__c.comision__c</members>
-        <members>Tabla_de_Precios__c.descuento_maximo__c</members>
-        <members>Tabla_de_Precios__c.gestion__c</members>
-        <members>Tabla_de_Precios__c.limite_aprobacion__c</members>
-        <members>Tabla_de_Precios__c.productcode__c</members>
-        <members>Tabla_de_Precios__c.producto__c</members>
+        <members>Tabla_de_Precios__c.Comision__c</members>
+        <members>Tabla_de_Precios__c.Descuento_Maximo__c</members>
+        <members>Tabla_de_Precios__c.Gestion__c</members>
+        <members>Tabla_de_Precios__c.Limite_Aprobacion__c</members>
+        <members>Tabla_de_Precios__c.ProductCode__c</members>
+        <members>Tabla_de_Precios__c.Producto__c</members>
         <name>CustomField</name>
     </types>
     <types>
