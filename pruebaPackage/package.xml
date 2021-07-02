@@ -5,9 +5,5 @@
         <members>Product2.SDX_Servicio__c</members>
         <name>CustomField</name>
     </types>
-    <types>
-        <members>SBQQ__QuoteLine__c-Quote Line Layout</members>
-        <name>Layout</name>
-    </types>
     <version>52.0</version>
 </Package>
