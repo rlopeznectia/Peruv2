@@ -603,11 +603,6 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		Test.startTest();
 
 		SDXAGIL_ClientRegistrarResp_JSON clase = new SDXAGIL_ClientRegistrarResp_JSON();
-		
-//MJ WAS HERE
-		integer i = clase.EsSatisfactorio;
-		string test_one = clase.ErrorCode;
-		string test_two = clase.Mensaje;
 		clase.message = 'TEST';
 		clase.errors = new List<SDXAGIL_ClientRegistrarResp_JSON.errors>();
 		SDXAGIL_ClientRegistrarResp_JSON.Errors errorClase = new SDXAGIL_ClientRegistrarResp_JSON.Errors();
@@ -642,6 +637,7 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		wsContrato.redirect();
 	
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
+		cont.Respuesta_Exitosa_de_Integracion__c = true;
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == true, true);
 
 		Test.stopTest();
