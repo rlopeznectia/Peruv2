@@ -5,6 +5,14 @@
         <name>CompactLayout</name>
     </types>
     <types>
+        <members>Account.Correo_facturacion__c</members>
+        <members>Account.Correo_facturacion_adicional__c</members>
+        <members>Account.Direcciones_Principales__c</members>
+        <members>Account.Es_Internacional__c</members>
+        <members>Account.Gestion__c</members>
+        <members>Account.Perfil_Propietario_opcional__c</members>
+        <members>Account.Propietario_opcional__c</members>
+        <members>Account.Recibe_vales__c</members>
         <members>Account.SDX_Comedor__c</members>
         <members>Account.SDX_Giro_de_negocio_cliente__c</members>
         <members>Account.SDX_Giro_de_negocio_merchant__c</members>
@@ -20,14 +28,6 @@
         <members>Account.SDX_Tipo_Administracion__c</members>
         <members>Account.SDX_Tipo_de_documento__c</members>
         <members>Account.SDX_Tipo_de_mercado__c</members>
-        <members>Account.Correo_facturacion__c</members>
-        <members>Account.Correo_facturacion_adicional__c</members>
-        <members>Account.Direcciones_Principales__c</members>
-        <members>Account.Es_Internacional__c</members>
-        <members>Account.Gestion__c</members>
-        <members>Account.Perfil_Propietario_opcional__c</members>
-        <members>Account.Propietario_opcional__c</members>
-        <members>Account.Recibe_vales__c</members>
         <members>Account.SPI_Segment__c</members>
         <members>Account.Tipo_de_lector__c</members>
         <name>CustomField</name>
@@ -37,20 +37,15 @@
         <name>FlexiPage</name>
     </types>
     <types>
-        <members>Account-Cliente</members>
-        <members>Account-Merchant</members>
+        <members>Account-Cliente Account Layout</members>
+        <members>Account-Merchant Account Layout</members>
         <name>Layout</name>
     </types>
     <types>
-        <members>Account.Cliente_Account_Layout</members>
-        <members>Account.Merchant_Account_Layout</members>
-        <name>RecordType</name>
-    </types>
-    <types>
+        <members>AccountOwnership</members>
         <members>AccountRating</members>
-        <members>AccountSource</members>
         <members>Industry</members>
-        <members>Ownership</members>
+        <members>LeadSource</members>
         <name>StandardValueSet</name>
     </types>
     <types>
