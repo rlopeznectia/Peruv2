@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <fields>
+        <fullName>Aprobacion__c</fullName>
+        <description>prueba para mostrar imagen en lineas que requieran aprobación</description>
+        <externalId>false</externalId>
+        <formula>IF( Requiere_Aprobacion_Manager_Comercial__c ,  IMAGE(&quot;/servlet/servlet.FileDownload?file=0150m000000QnRp&quot;,&quot;Requiere Aprobación Manager Comercial&quot;, 20, 20) , &apos;&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Aprobación</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Carga_Media__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( SBQQ__ProductOption__c ) , SBQQ__Quote__r.Carga_Media__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Carga Media</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Comision_Monto__c</fullName>
+        <externalId>false</externalId>
+        <label>Comisión ($)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Comision__c</fullName>
+        <externalId>false</externalId>
+        <label>Comisión (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Configured_SKU_Product_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Configured SKU Product Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Descuento_Calculado__c</fullName>
+        <externalId>false</externalId>
+        <label>Descuento Calculado</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Dias_de_Credito__c</fullName>
+        <externalId>false</externalId>
+        <label>Días de Crédito</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Do_not_Run_Price_Rule__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>No se debe mostrar en pantalla. Sirve para que la price rule de COmision solo la escriba cuando se carga por primera vez el valor y luego deje al usuario cambiarla. La Price Rule no se ejecutará si el check esta marcado.</description>
+        <externalId>false</externalId>
+        <label>Do Not Run Price Rule</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EditLinesFieldSetName__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( SBQQ__Quote__r.SBQQ__Opportunity2__r.RecordType.DeveloperName , 
+
+
+
+&apos;Merchant&apos;, &apos;Line_Editor_Merchants&apos;,
+
+&apos;SBQQ__LineEditor&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Define el set de campos en Line Editor segun el tipo de registro de la Oportunidad</inlineHelpText>
+        <label>EditLinesFieldSetName</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Field2__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( TEXT (SBQQ__Product__r.Rate_Type__c ) ,
+
+&quot;$&quot;, &quot;$&quot;,
+&quot;Porcentaje&quot;, &quot;%&quot;,
+&quot;Cantidad&quot;, &quot;#&quot;,
+
+&quot;-&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>$/%</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Frecuencia__c</fullName>
+        <externalId>false</externalId>
+        <label>Frecuencia</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Recurrente</fullName>
+                    <default>false</default>
+                    <label>Recurrente</label>
+                </value>
+                <value>
+                    <fullName>NoRecurrente</fullName>
+                    <default>false</default>
+                    <label>NoRecurrente</label>
+                </value>
+                <value>
+                    <fullName>OneShot</fullName>
+                    <default>false</default>
+                    <label>OneShot</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Frecuencia_de_Reembolsos__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>representa la frecuencia en días (cada n días) que puede solicitarse un reembolso por parte del Merchant</inlineHelpText>
+        <label>Frecuencia de Reembolsos</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Info_Adicional__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( SBQQ__ProductCode__c , 
+
+&quot;FREC_REEMB&quot;,  &apos;Cada &apos; + TEXT(Frecuencia_de_Reembolsos__c) + &apos; &apos; + TEXT(SBQQ__Product__r.Rate_Type__c)  , 
+&quot;SOPORTE&quot;, TEXT( Soporte__c ),
+&quot;MET_REEMB&quot;, TEXT(  Metodo_de_Reembolso__c  ),
+
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Info Adicional</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LineaCotizacionMerchant__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Field2__c , 
+
+&apos;%&apos;,  text(Precio_Negociado__c) +&apos;%&apos; , 
+&apos;$&apos;,   &apos;S/ &apos; + text(SBQQ__NetTotal__c)  , 
+
+ Info_Adicional__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>LineaCotizacionMerchant</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metodo_de_Reembolso__c</fullName>
+        <externalId>false</externalId>
+        <label>Método de Reembolso</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Metodo_de_Reembolso</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>N_de_Beneficiarios__c</fullName>
+        <externalId>false</externalId>
+        <label>Nº de Beneficiarios</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Precio_Estandar__c</fullName>
+        <externalId>false</externalId>
+        <label>Precio Estándar</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Precio_Minimo_Sin_Aprobacion__c</fullName>
+        <description>No se requiere mostrar en pantalla, se usa para criterios de Aprobación</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Guarda desde Tabla de Precios el valor mínimo sin requerir Aprobación Manager Comercial.</inlineHelpText>
+        <label>Precio Minimo Sin Aprobación</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Precio_Negociado__c</fullName>
+        <externalId>false</externalId>
+        <label>Precio Negociado</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductCode_Field__c</fullName>
+        <description>Utilizado para poder usar en campo de resumen y evaluar criterios de entrada a proceso de aprobación. Este campo se llena en Process Builder del Quite Line. No se requiere mostrar en pantalla.</description>
+        <externalId>false</externalId>
+        <label>ProductCode Field</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Option_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__ProductOption__r.SBQQ__ConfiguredSKU__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Option Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requiere_Aprobacion_Manager_Comercial__c</fullName>
+        <externalId>false</externalId>
+        <formula>Precio_Negociado__c &lt;  Precio_Minimo_Sin_Aprobacion__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Indica si el Precio Negociado está por debajo del minimo definido para no requerir aprobación Manager Comercial, lo que se usa para los criterios de Aprobación</inlineHelpText>
+        <label>Requiere Aprobación Manager Comercial</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CarryoverLine__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Denotes this line as an auto-mapped option on an Upgraded Bundle.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes this line as an auto-selected option of an upgrade bundle.</inlineHelpText>
+        <label>Carry-Over Line</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ChargeType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The type of the product charge.  This is a system field that is derived from the associated product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The type of the product charge.  This is a system field that is derived from the associated product.</inlineHelpText>
+        <label>Charge Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>SBQQ__ChargeType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SDX_BV_mensual__c</fullName>
+        <externalId>false</externalId>
+        <label>BV mensual</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Soporte__c</fullName>
+        <externalId>false</externalId>
+        <label>Soporte</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Soporte</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tech_Actual_Tabla_de_Precio__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Almacena el valor actual del campo de Tabla de Precios con el objetivo de no perderlo en caso de modificarlo y poder deshacer la operacion</inlineHelpText>
+        <label>Tech Actual Tabla de Precio</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tech_Anterior_Descuento__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Campo para almacenar el descuento calculado anterior y poder deshacer operacion</inlineHelpText>
+        <label>Tech Anterior Descuento</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Tech_Anterior_Valor__c</fullName>
+        <externalId>false</externalId>
+        <label>Tech Anterior Valor</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tech_Ultima_Tabla_de_Precio__c</fullName>
+        <externalId>false</externalId>
+        <label>Tech Ultima Tabla de Precio</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Comision__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Monto Total de la Comisión</inlineHelpText>
+        <label>Total Comisión</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Vigencia__c</fullName>
+        <externalId>false</externalId>
+        <label>Vigencia</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>
