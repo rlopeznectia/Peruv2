@@ -1,42 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Contact.SDX_Formato_Compacto_Contacto</members>
-        <name>CompactLayout</name>
-    </types>
-    <types>
-        <members>Contact.Numero_de_Documento__c</members>
-        <members>Contact.SDX_Area_cliente__c</members>
-        <members>Contact.SDX_Departamento__c</members>
-        <members>Contact.SDX_Distrito__c</members>
-        <members>Contact.SDX_Genero__c</members>
-        <members>Contact.SDX_Nivel_de_relacion__c</members>
-        <members>Contact.SDX_Provincia__c</members>
-        <members>Contact.SDX_Tipo_de_contacto__c</members>
-        <members>Contact.SDX_Tipo_de_documento__c</members>
+        <members>Contract.Codigo_Giro__c</members>
+        <members>Contract.Comision_Pedido__c</members>
+        <members>Contract.Complejo__c</members>
+        <members>Contract.ContractTerm</members>
+        <members>Contract.Documentacion_Entregada__c</members>
+        <members>Contract.Documento_Firmado__c</members>
+        <members>Contract.Ejecutivo_Contratos__c</members>
+        <members>Contract.Ejecutivo_Farmer__c</members>
+        <members>Contract.Encuesta_Enviada__c</members>
+        <members>Contract.Envia_Correo_Onboarding__c</members>
+        <members>Contract.Excepcion__c</members>
+        <members>Contract.Excepcion_regularizada__c</members>
+        <members>Contract.Fecha_de_entrega_de_Documentacion__c</members>
+        <members>Contract.Fecha_estimada_de_regularizaci_n__c</members>
+        <members>Contract.Fecha_y_hora_de_Regularizaci_n__c</members>
+        <members>Contract.Fecha_y_hora_de_ingreso_a_Contratos__c</members>
+        <members>Contract.Fecha_y_hora_ingreso_SodexoAgil__c</members>
+        <members>Contract.Gestor__c</members>
+        <members>Contract.Giro__c</members>
+        <members>Contract.Interlocutor_Operativo__c</members>
+        <members>Contract.Kit_Enviaddo__c</members>
+        <members>Contract.Mensaje_de_Integracion__c</members>
+        <members>Contract.OnBoarding_Exitoso__c</members>
+        <members>Contract.Producto_Sodexo_Agil__c</members>
+        <members>Contract.RUC_Firmado_por_Cliente__c</members>
+        <members>Contract.RecordTypeOppty__c</members>
+        <members>Contract.Respuesta_Exitosa_de_Integracion__c</members>
+        <members>Contract.SDX_Segmento__c</members>
+        <members>Contract.Supervisor_Contratos__c</members>
+        <members>Contract.Tipo_Registro_Oppty__c</members>
+        <members>Contract.Tipo_de_negocio__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Contact_Record_Page</members>
+        <members>Contrato_P_gina_de_registro</members>
         <name>FlexiPage</name>
     </types>
     <types>
-        <members>Contact-Cliente Contacto Layout</members>
-        <members>Contact-Merchant Contacto Layout</members>
+        <members>Contract-Contract_Layout</members>
         <name>Layout</name>
     </types>
     <types>
-        <members>LeadSource</members>
+        <members>ContractStatus</members>
         <name>StandardValueSet</name>
     </types>
     <types>
-        <members>Contact.CO001_Valida_Genero</members>
-        <members>Contact.CO002_ValidaTipoDocumento</members>
-        <members>Contact.CO003_Valida_Genero</members>
-        <members>Contact.CO004_Valida_Area_Cliente</members>
-        <members>Contact.CO005_LargoTelefonoMovil</members>
-        <members>Contact.CO006_LargoTelefono</members>
+        <members>Contract.CNT00001_ValidaDatosEjecutivo</members>
+        <members>Contract.CNT00002_ValidaDatosContrato</members>
+        <members>Contract.CNT00003_ComisionPedido</members>
         <name>ValidationRule</name>
+    </types>
+    <types>
+        <members>Contract.Sodexo_Agil</members>
+        <name>WebLink</name>
     </types>
     <version>52.0</version>
 </Package>
