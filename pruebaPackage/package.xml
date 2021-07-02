@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Tabla_de_Precios__c.Comision__c</members>
-        <members>Tabla_de_Precios__c.Descuento_Maximo__c</members>
-        <members>Tabla_de_Precios__c.Gestion__c</members>
-        <members>Tabla_de_Precios__c.Limite_Aprobacion__c</members>
-        <members>Tabla_de_Precios__c.ProductCode__c</members>
-        <members>Tabla_de_Precios__c.Producto__c</members>
+        <members>Account.SDX_Account_Compact_Layout</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
+        <members>Account.SDX_Comedor__c</members>
+        <members>Account.SDX_Giro_de_negocio_cliente__c</members>
+        <members>Account.SDX_Giro_de_negocio_merchant__c</members>
+        <members>Account.SDX_Medios_de_pago__c</members>
+        <members>Account.SDX_Mes_cierre_de_presupuesto__c</members>
+        <members>Account.SDX_Nombre_comercial__c</members>
+        <members>Account.SDX_Nombre_de_competidor__c</members>
+        <members>Account.SDX_Numero_de_documento__c</members>
+        <members>Account.SDX_Politica_incremento_salarial__c</members>
+        <members>Account.SDX_Puntos_de_venta__c</members>
+        <members>Account.SDX_Segmento__c</members>
+        <members>Account.SDX_Segmento_de_merchant__c</members>
+        <members>Account.SDX_Tipo_administracion__c</members>
+        <members>Account.SDX_Tipo_de_documento__c</members>
+        <members>Account.SDX_Tipo_de_mercado__c</members>
+        <members>Account.correo_facturacion__c</members>
+        <members>Account.correo_facturacion_adicional__c</members>
+        <members>Account.direcciones_principales__c</members>
+        <members>Account.es_internacional__c</members>
+        <members>Account.gestion__c</members>
+        <members>Account.perfil_propietario_opcional__c</members>
+        <members>Account.propietario_opcional__c</members>
+        <members>Account.recibe_vales__c</members>
+        <members>Account.spi_segment__c</members>
+        <members>Account.tipo_de_lector__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Tabla_de_Precios__c</members>
-        <name>CustomObject</name>
+        <members>Account_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Account-Cliente</members>
+        <members>Account-Merchant</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Account.Cliente_Account_Layout</members>
+        <members>Account.Merchant_Account_Layout</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>AccountRating</members>
+        <members>AccountSource</members>
+        <members>Industry</members>
+        <members>Ownership</members>
+        <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>Account.AC00001_LargoRUC</members>
+        <name>ValidationRule</name>
     </types>
     <version>52.0</version>
 </Package>
