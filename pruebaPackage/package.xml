@@ -4,9 +4,5 @@
         <members>Contract.RUC_Firmado_por_Cliente__c</members>
         <name>CustomField</name>
     </types>
-    <types>
-        <members>Contract-Contract Layout</members>
-        <name>Layout</name>
-    </types>
     <version>52.0</version>
 </Package>
