@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>SDXAGIL_ClientRegistrarResp_JSON</members>
-        <members>SDXAGIL_ConsultasSOQL</members>
-        <members>SDXAGIL_Helper_Class</members>
-        <members>SDXAGIL_MockHttpResponseError</members>
-        <members>SDXAGIL_MockHttpResponseEx</members>
-        <members>SDXAGIL_MockHttpResponseGenerator</members>
-        <members>SDXAGIL_MockHttpResponseGenerator001</members>
-        <members>SDXAGIL_MockHttpResponseToken</members>
-        <members>SDXAGIL_MockHttpResponseTokenError</members>
-        <members>SDXAGIL_TokenResponse_Class</members>
-        <members>SDXAGIL_TokenResponse_Class_Test</members>
-        <members>SDXAGIL_WsContrato_Controller</members>
-        <members>SDXAGIL_WsContrato_Controller_Test</members>
-        <name>ApexClass</name>
-    </types>
-    <types>
-        <members>SDXAGIL_WsContrato</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomMetadata</name>
+        <members>Opportunity.Oppty_AlertaOpptyVencida</members>
+        <members>Opportunity.Oppty_AvisoOpptyInactividad</members>
+        <members>Task.TaskTaraeaVencida</members>
+        <name>WorkflowAlert</name>
     </types>
     <version>52.0</version>
 </Package>
