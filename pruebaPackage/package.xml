@@ -4,5 +4,11 @@
         <members>*</members>
         <name>CustomMetadata</name>
     </types>
+    <types>
+        <members>API_SodexoAgil__mdt</members>
+        <members>PricebookID__mdt</members>
+        <members>SodexoAgil_ProductsCheck__mdt</members>
+        <name>CustomObject</name>
+    </types>
     <version>52.0</version>
 </Package>
