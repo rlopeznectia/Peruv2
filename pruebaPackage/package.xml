@@ -20,16 +20,16 @@
         <members>Account.SDX_Tipo_administracion__c</members>
         <members>Account.SDX_Tipo_de_documento__c</members>
         <members>Account.SDX_Tipo_de_mercado__c</members>
-        <members>Account.correo_facturacion__c</members>
-        <members>Account.correo_facturacion_adicional__c</members>
-        <members>Account.direcciones_principales__c</members>
-        <members>Account.es_internacional__c</members>
-        <members>Account.gestion__c</members>
-        <members>Account.perfil_propietario_opcional__c</members>
-        <members>Account.propietario_opcional__c</members>
-        <members>Account.recibe_vales__c</members>
-        <members>Account.spi_segment__c</members>
-        <members>Account.tipo_de_lector__c</members>
+        <members>Account.Correo_facturacion__c</members>
+        <members>Account.Correo_facturacion_adicional__c</members>
+        <members>Account.Direcciones_Principales__c</members>
+        <members>Account.Es_Internacional__c</members>
+        <members>Account.Gestion__c</members>
+        <members>Account.Perfil_Propietario_opcional__c</members>
+        <members>Account.Propietario_opcional__c</members>
+        <members>Account.Recibe_vales__c</members>
+        <members>Account.SPI_Segment__c</members>
+        <members>Account.Tipo_de_lector__c</members>
         <name>CustomField</name>
     </types>
     <types>
