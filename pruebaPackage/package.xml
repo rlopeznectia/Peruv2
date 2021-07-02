@@ -10,14 +10,14 @@
         <members>Account.SDX_Giro_de_negocio_merchant__c</members>
         <members>Account.SDX_Medios_de_pago__c</members>
         <members>Account.SDX_Mes_cierre_de_presupuesto__c</members>
-        <members>Account.SDX_Nombre_comercial__c</members>
+        <members>Account.SDX_Nombre_Comercial__c</members>
         <members>Account.SDX_Nombre_de_competidor__c</members>
         <members>Account.SDX_Numero_de_documento__c</members>
         <members>Account.SDX_Politica_incremento_salarial__c</members>
         <members>Account.SDX_Puntos_de_venta__c</members>
         <members>Account.SDX_Segmento__c</members>
         <members>Account.SDX_Segmento_de_merchant__c</members>
-        <members>Account.SDX_Tipo_administracion__c</members>
+        <members>Account.SDX_Tipo_Administracion__c</members>
         <members>Account.SDX_Tipo_de_documento__c</members>
         <members>Account.SDX_Tipo_de_mercado__c</members>
         <members>Account.Correo_facturacion__c</members>
