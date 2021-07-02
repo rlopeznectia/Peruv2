@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Opportunity.Oppty_AlertaOpptyVencida</members>
-        <members>Opportunity.Oppty_AvisoOpptyInactividad</members>
-        <members>Task.TaskTaraeaVencida</members>
-        <name>WorkflowAlert</name>
+        <members>*</members>
+        <name>Flow</name>
     </types>
     <version>52.0</version>
 </Package>
