@@ -13,9 +13,5 @@
         <members>Tabla_de_Precios__c</members>
         <name>CustomObject</name>
     </types>
-    <types>
-        <members>Tabla_de_Precios__c-Formato_Tabla_de_Precios</members>
-        <name>Layout</name>
-    </types>
     <version>52.0</version>
 </Package>
