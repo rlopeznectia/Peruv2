@@ -81,7 +81,7 @@ public class SDXAGIL_ConsultasSOQL  {
 									  StartDate, EndDate
 									  FROM Contract
 									  WHERE Id = :idContrato];
-			System.debug('Contrato Result 2 '+datosContrato2);
+			System.debug('Contrato Result 2 '+datosContrato);
 			return datosContrato;
 		}catch(Exception ex){
 			System.debug('ERROR AL EJECUTAR SOQL');
