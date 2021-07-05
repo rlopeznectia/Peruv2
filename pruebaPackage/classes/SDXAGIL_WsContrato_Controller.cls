@@ -60,6 +60,13 @@ public class SDXAGIL_WsContrato_Controller  {
 		//Establezco URL para retornar a la Oportunidad.
 		URLretorno = urlVal + 'lightning/r/Contract/' + currentRecordId + '/view';
 
+		//TEST
+		API_SodexoAgil__mdt apiSodexoAgilToken = consultasSOQL.buscarDatosTokenApiSodexoAgil('API_SodexoAgil');
+		if(apiSodexoAgilToken.username_token__c == 'SALESFORCE'){
+			String prueba = 'algo';
+			prueba = 'algo 2';
+		}
+
 		//Invoco a clase SOQL para obtener los datos de la Oportunidad y Cotización.
 		datosContrato = consultasSOQL.buscarDatosContrato(currentRecordId);
 
@@ -83,7 +90,10 @@ public class SDXAGIL_WsContrato_Controller  {
 			}
 
 			Boolean productoAutorizado = consultasSOQL.checkProductosEnvioWs(listaCodigoProductos);
-			
+			//if(Test.isRunningTest()){
+				//productoAutorizado = true;
+			//}
+
 			SDXAGIL_Helper_Class helper = new SDXAGIL_Helper_Class();
 			List<String> errores = helper.revisarCamposObligatorios(datosContrato, listaProductos, datosDireccion, idProducto);
 				
