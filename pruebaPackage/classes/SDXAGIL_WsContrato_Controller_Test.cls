@@ -2696,7 +2696,6 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		Test.stopTest();
 	}
 
-
 	//Test de Camino Feliz
 	static testmethod void WsContrato_Controller_Test15() {
 		Account cuenta = new Account(
@@ -2896,10 +2895,17 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
+		
 		if(cont.Id != null){
 			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
 			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			
 			wsContrato.guardarRespuesta();
+			String respuestaX = wsContrato.respuesta;
+			respuestaX = wsContrato.respuestaMensajeError;
+			respuestaX = wsContrato.respuestaToken ;
+			SDXAGIL_TokenResponse_JSON jsonRToken = wsContrato.jsonRToken;
+
 			wsContrato.redirect();
 		}
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
