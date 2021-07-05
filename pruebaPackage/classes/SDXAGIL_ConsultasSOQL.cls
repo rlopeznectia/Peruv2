@@ -45,6 +45,7 @@ public class SDXAGIL_ConsultasSOQL  {
 	//SOQL Query para buscar los datos de Contrato
 	public Contract buscarDatosContrato(String idContrato){
 		try{
+			System.debug('ID Contrato = '+idContrato);
 			Contract datosContrato = [SELECT Id, Name, 
 									  Account.SDX_Tipo_de_documento__c, Account.SDX_Numero_de_documento__c,
 									  Account.Name, Account.SDX_Nombre_Comercial__c,

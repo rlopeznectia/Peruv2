@@ -53,7 +53,10 @@ public class SDXAGIL_WsContrato_Controller  {
 
 		//Obtengo Id de Contrato.
 		currentRecordId = ApexPages.CurrentPage().getparameters().get('id');
-			
+		if(currentRecordId == null){
+		    currentRecordId = String.valueOf((Contract) controller.getRecord());
+		}	
+		
 		//Obtengo URL base.
 		String urlVal = ApexPages.currentPage().getHeaders().get('Referer');
 
