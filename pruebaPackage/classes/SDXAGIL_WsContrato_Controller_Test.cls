@@ -3374,7 +3374,7 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 			wsContrato.guardarRespuesta();
 			wsContrato.redirect();
 		}
-		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST-PROD-NOK'];
+		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
 		cont.Respuesta_Exitosa_de_Integracion__c = true;
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == true, true);
 
