@@ -1354,6 +1354,11 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		);
 		insert cont;
 		
+		String userId = UserInfo.getUserId();
+		User usuario = [SELECT Id, SDX_DNI__c FROM User where Id =: userId];
+		usuario.SDX_DNI__c = '17375693';
+		update usuario;
+
 		Test.startTest();
 
 		Test.setMock(HttpCalloutMock.class, new SDXAGIL_MockHttpResponseGenerator001());
@@ -1568,6 +1573,11 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		);
 		insert cont;
 		
+		String userId = UserInfo.getUserId();
+		User usuario = [SELECT Id, SDX_DNI__c FROM User where Id =: userId];
+		usuario.SDX_DNI__c = '17375693';
+		update usuario;
+
 		Test.startTest();
 
 		Test.setMock(HttpCalloutMock.class, new SDXAGIL_MockHttpResponseTokenError());
@@ -1804,6 +1814,11 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		  SBQQ__Quote__c = qte.Id
 		);
 		insert cont;
+
+		String userId = UserInfo.getUserId();
+		User usuario = [SELECT Id, SDX_DNI__c FROM User where Id =: userId];
+		usuario.SDX_DNI__c = '17375693';
+		update usuario;
 		
 		Test.startTest();
 
@@ -2017,6 +2032,11 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		  SBQQ__Quote__c = qte.Id
 		);
 		insert cont;
+
+		String userId = UserInfo.getUserId();
+		User usuario = [SELECT Id, SDX_DNI__c FROM User where Id =: userId];
+		usuario.SDX_DNI__c = '17375693';
+		update usuario;
 		
 		Test.startTest();
 
@@ -2230,6 +2250,11 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		  SBQQ__Quote__c = qte.Id
 		);
 		insert cont;
+
+		String userId = UserInfo.getUserId();
+		User usuario = [SELECT Id, SDX_DNI__c FROM User where Id =: userId];
+		usuario.SDX_DNI__c = '17375693';
+		update usuario;
 		
 		Test.startTest();
 
@@ -2444,6 +2469,11 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		  SBQQ__Quote__c = qte.Id
 		);
 		insert cont;
+
+		String userId = UserInfo.getUserId();
+		User usuario = [SELECT Id, SDX_DNI__c FROM User where Id =: userId];
+		usuario.SDX_DNI__c = '17375693';
+		update usuario;
 		
 		Test.startTest();
 
@@ -2656,6 +2686,11 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		  SBQQ__Quote__c = qte.Id
 		);
 		insert cont;
+
+		String userId = UserInfo.getUserId();
+		User usuario = [SELECT Id, SDX_DNI__c FROM User where Id =: userId];
+		usuario.SDX_DNI__c = '17375693';
+		update usuario;
 		
 		Test.startTest();
 
@@ -2887,6 +2922,11 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		  SBQQ__Quote__c = qte.Id
 		);
 		insert cont;
+
+		String userId = UserInfo.getUserId();
+		User usuario = [SELECT Id, SDX_DNI__c FROM User where Id =: userId];
+		usuario.SDX_DNI__c = '17375693';
+		update usuario;
 		
 		Test.startTest();
 		
@@ -3578,6 +3618,11 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		  SBQQ__Quote__c = qte.Id
 		);
 		insert cont;
+
+		String userId = UserInfo.getUserId();
+		User usuario = [SELECT Id, SDX_DNI__c FROM User where Id =: userId];
+		usuario.SDX_DNI__c = '17375693';
+		update usuario;
 		
 		Test.startTest();
 
@@ -3598,13 +3643,6 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		//SDXAGIL_WsContrato_Controller.respuesta = 'ALGO';
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == true, true);
 
-		Test.stopTest();
-	}
-
-	//Test de camino Infeliz 03
-	static testmethod void WsContrato_Controller_Test20() {
-		Test.startTest();
-		
 		Test.stopTest();
 	}
 }
