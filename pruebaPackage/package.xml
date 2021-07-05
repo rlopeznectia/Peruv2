@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Contrato_P_gina_de_registro</members>
-        <name>FlexiPage</name>
+        <members>*</members>
+        <name>Profile</name>
     </types>
     <types>
-        <members>Contract.Sodexo_Agil</members>
-        <name>QuickAction</name>
+        <members>*</members>
+        <name>ProfilePasswordPolicy</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ProfileSessionSetting</name>
     </types>
     <version>52.0</version>
 </Package>
