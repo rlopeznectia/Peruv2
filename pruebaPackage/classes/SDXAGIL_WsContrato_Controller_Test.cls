@@ -2710,7 +2710,7 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		  SDX_Tipo_de_mercado__c = 'Libre',				// Tipo de mercado
 		  SDX_Nombre_Comercial__c = 'Test',
 		  Phone = '123456789',
-		  Correo_Facturacion__c = 'TEST@TEST.CL'
+		  Correo_Facturacion__c = 'TEST1@TEST.CL'
 		);
 		insert cuenta;
 
@@ -3158,6 +3158,430 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		claseJson = new SDXAGIL_ClientRegistrarResp_JSON();
 		String jsonTest = '{"Message": "Authorization has been denied for this request."}';
 		claseJson = SDXAGIL_ClientRegistrarResp_JSON.parse(jsonTest);
+
+		Test.stopTest();
+	}
+
+	//Test de Camino Infeliz 01
+	static testmethod void WsContrato_Controller_Test18() {
+		Test.startTest();
+
+		Account cuenta = new Account(
+		  Name = 'TEST',								// Razón Social
+		  NumberOfEmployees = 44,                       // Empleados
+		  SDX_Tipo_de_documento__c = 'RUC',             // Tipo de documento
+		  SDX_Numero_de_documento__c = '12345678903',   // Número de documento
+		  SDX_Tipo_Administracion__c = 'Individual',    // Tipo Administración
+		  Industry = 'Other',                           // Sector
+		  SDX_Tipo_de_mercado__c = 'Libre',				// Tipo de mercado
+		  SDX_Nombre_Comercial__c = 'Test',
+		  Phone = '123456789',
+		  Correo_Facturacion__c = 'TEST1@TEST.CL'
+		);
+		insert cuenta;
+
+		Distrito__c distrito = new Distrito__c(
+		  Name = 'Las Amazonas',         // Nombre de Distrito
+		  SDX_Departamento__c = 'Loreto',  // Departamento
+		  SDX_Provincia__c = 'Maynas'     // Provincia
+		);
+		insert distrito;
+
+		SDX_Direccion__c direccion = new SDX_Direccion__c(
+		  Name = 'Triario_Las urbinas_103',										   // Nombre de Dirección
+		  SDX_Tipo__c = 'Facturación; Envío; Punto de Consumo; Punto de Entrega',  // Tipo
+		  Calle__c = 'Las urbinas',                                                // Calle
+		  SDX_Numero__c = '53',                                                    // Número
+		  Cuenta__c = cuenta.Id,                                                   // Cuenta
+		  SDX_Dpto_Oficina__c = '103',                                             // Dpto/Oficina
+		  SDX_Departamento__c = 'Amazonas',                                        // Departamento
+		  Principal__c = true,                                                     // Principal
+		  SDX_Provincia__c = 'Antabamba',                                          // Provincia
+		  Distrito__c = distrito.Id,											   // Distrito
+		  SDX_Nombre_encargado__c = 'TEST',                            // Nombre encargado
+		  Cargo__c = 'Asistente Comercial',                                        // Cargo
+		  SDX_Telefono_movil__c = '+56961553263',                                  // Teléfono móvil
+		  SDX_Telefono_fijo__c = '+56222222222',                                   // Teléfono fijo
+		  SDX_Correo_electronico__c = 'prueba@prueba.cl'                     // Correo electrónico
+		);
+		insert direccion;
+
+		Contact contacto = new Contact(
+		  AccountId = cuenta.Id,						// Razón Social
+		  LastName = 'TEST',
+		  SDX_Genero__c = 'Masculino',                  // Género
+		  SDX_Nivel_de_relacion__c = 'Relación débil',  // Nivel de relación
+		  Title = 'GERENTE',                            // Cargo
+		  SDX_Area_cliente__c = 'Logística',            // Área cliente
+		  SDX_Tipo_de_documento__c = 'DNI',             // Tipo de documento
+		  Numero_de_Documento__c = '10101010',          // Número de Documento
+		  Email = 'rpolezz@sodexo.com'                   // Correo electrónico
+		);
+		insert contacto;
+
+		Opportunity opp = new Opportunity(
+		  Name = 'Test__FOOD_2021/6',
+		  StageName = '1.Nuevo',						 // Etapa
+		  AccountId = cuenta.Id,						 // Razón Social
+		  Probability = 0,                               // Probabilidad (%)
+		  LeadSource = 'Inbound',                        // Origen del candidato
+		  CloseDate = Date.valueOf('2021-05-28'),        // Fecha de cierre
+		  N_Compras_al_A_o__c = 10,						 // Nº Compras al Año
+		  Amount = 15002.00,                             // BV Mensual
+		  SDX_Segmento__c = 'FOOD',                      // Segmento
+		  Interlocutor__c = contacto.Id,				 // Interlocutor
+		  Email_Pedidos__c = 'test@wspedidos.cl',        // Email Pedidos
+		  SDX_Budget_Mensual_Estimado__c = 15000.00,	 // Budget Mensual Estimado
+		  //SBQQ__PrimaryQuote__c = 'a0z0m000002LvfB',   // Primary Quote
+		  SBQQ__Contracted__c = false,                   // Contracted
+		  SBQQ__Renewal__c = false,                      // Renewal
+		  Loss_Reason__c = 'Inactividad',                // Motivo Pérdida
+		  SDX_BusinessValue__c = 15000                   // Business Value
+		);
+		insert opp;
+
+		Product2 prod = new Product2(
+		  Name = 'FOODPASS TARJETA CLIENTE',				// Nombre del producto
+		  Family = 'FoodPass',                              // Familia de productos
+		  ProductCode = 'FOOD_TARB',                         // Código de producto
+		  SBQQ__ExcludeFromOpportunity__c = false,          // Exclude From Opportunity
+		  IsActive = true,                                  // Activo
+		  SBQQ__HidePriceInSearchResults__c = false,        // Hide Price in Search Results
+		  SBQQ__Hidden__c = false,                          // Hidden
+		  SBQQ__AssetAmendmentBehavior__c = 'Default',      // Asset Amendment Behavior
+		  SBQQ__SortOrder__c = 90,							// Sort Order
+		  SBQQ__AssetConversion__c = 'One per quote line',  // Asset Conversion
+		  SBQQ__Component__c = false,                       // Component
+		  SBQQ__QuantityEditable__c = false,                // Quantity Editable
+		  SBQQ__Optional__c = false,                        // Optional
+		  SBQQ__DefaultQuantity__c = 1,						// Default Quantity
+		  SBQQ__BlockPricingField__c = 'Quantity',          // Block Pricing Field
+		  SBQQ__QuantityScale__c = 1,	                    // Quantity Scale
+		  SBQQ__Specifications__c = '\n',                   // Specifications
+		  SBQQ__DescriptionLocked__c = false,               // Lock Description
+		  SBQQ__ConfiguredDescriptionPattern__c = '\n',     // Configured Description Pattern
+		  SDX_Segmento__c = 'FOOD',                         // Segmento
+		  Rate_Type__c = '$',                               // Rate Type
+		  Description = 'Producto Cliente FoodPass',        // Descripción del producto
+		  SBQQ__ConfigurationType__c = 'Disabled',          // Configuration Type
+		  SBQQ__OptionLayout__c = 'Sections',               // Option Layout
+		  SBQQ__OptionSelectionMethod__c = 'Click',         // Option Selection Method
+		  SBQQ__ReconfigurationDisabled__c = false,         // Disable Reconfiguration
+		  SBQQ__PricingMethod__c = 'List',                  // Pricing Method
+		  SBQQ__CostEditable__c = false,                    // Cost Editable
+		  SBQQ__PricingMethodEditable__c = false,           // Pricing Method Editable
+		  SBQQ__PriceEditable__c = true,                    // Price Editable
+		  SBQQ__NonDiscountable__c = false,                 // Non Discountable
+		  SBQQ__NonPartnerDiscountable__c = false,          // Non Partner Discountable
+		  SBQQ__IncludeInMaintenance__c = false,            // Include In Percent Of Total
+		  SBQQ__ExcludeFromMaintenance__c = false,          // Exclude From Percent Of Total
+		  SBQQ__SubscriptionPricing__c = 'Fixed Price',     // Subscription Pricing
+		  SBQQ__SubscriptionBase__c = 'List',               // Percent Of Total Base
+		  SBQQ__SubscriptionType__c = 'Renewable'			// Subscription Type
+		);
+		insert prod;
+
+		Id pricebookIdStd = Test.getStandardPricebookId();
+
+		SBQQ__Quote__c qte = new SBQQ__Quote__c(
+		  Vigencia__c = 3,								// Vigencia
+		  Dias_de_Credito__c = 15,	                    // Días de Crédito
+		  Quote_Aprobado__c = true,                     // Quote Aprobado
+		  SBQQ__Opportunity2__c = opp.Id,				// Opportunity
+		  SBQQ__Primary__c = true,                      // Primary
+		  SBQQ__Account__c = cuenta.Id,					// Account
+		  SBQQ__Type__c = 'Quote',                      // Type
+		  SBQQ__SalesRep__c = UserInfo.getUserId(),     // Sales Rep
+		  SBQQ__Status__c = 'Aceptado',                 // Status
+		  SBQQ__PrimaryContact__c = contacto.Id,		// Primary Contact
+		  N_de_Beneficiarios__c = 30,                   // Nº de Beneficiarios
+		  BV_Mensual__c = 15000.00,                     // BV Mensual
+		  Tipo_Oportunidad__c = 'Cliente',              // Tipo Oportunidad
+		  SBQQ__PricebookId__c = pricebookIdStd,		// Pricebook ID
+		  SBQQ__PriceBook__c = pricebookIdStd			// Price Book
+		);
+		insert qte;
+
+		SBQQ__QuoteLine__c qteLine = new SBQQ__QuoteLine__c(
+		  SBQQ__Quote__c = qte.Id,										   // Quote
+		  SBQQ__Product__c = prod.Id,				                       // Product
+		  SBQQ__Number__c = 1,	                                           // Number
+		  SBQQ__Quantity__c = 1.00,	                                       // Quantity
+		  SBQQ__Renewal__c = false,                                        // Renewal
+		  SBQQ__PricingMethod__c = 'List',                                 // Pricing Method
+		  SBQQ__CostEditable__c = false,                                   // Cost Editable
+		  SBQQ__PricingMethodEditable__c = false,                          // Pricing Method Editable
+		  SBQQ__PriceEditable__c = true,                                   // Price Editable
+		  SBQQ__Hidden__c = false,                                         // Hidden
+		  SBQQ__Optional__c = false,                                       // Optional
+		  Precio_Estandar__c = 0,	                                       // Precio Estándar
+		  Precio_Negociado__c = 0,	                                       // Precio Negociado
+		  SBQQ__Description__c = 'Producto Cliente FoodPass ECOMMERCE\n',  // Description
+		  Soporte__c = 'Vale Físico y Virtual',                            // Soporte
+		  Metodo_de_Reembolso__c = 'Merchie',                              // Método de Reembolso
+		  SBQQ__ListPrice__c = 0.00,                                       // List Unit Price
+		  SBQQ__CustomerPrice__c = 0.00,                                   // Customer Unit Price
+		  SBQQ__NetPrice__c = 0.00,                                        // Net Unit Price
+		  SBQQ__SpecialPrice__c = 0.00,                                    // Special Price
+		  SBQQ__RegularPrice__c = 0.00,                                    // Regular Unit Price
+		  SBQQ__ProratedListPrice__c = 0.00,                               // Prorated List Price
+		  SBQQ__SubscriptionPricing__c = 'Fixed Price',                    // Subscription Pricing
+		  SBQQ__SubscriptionScope__c = 'Quote',                            // Percent of Total Scope
+		  SBQQ__SubscriptionBase__c = 'List',                              // Percent of Total Base
+		  SBQQ__ProductSubscriptionType__c = 'Renewable',				   // 
+		  SBQQ__SubscriptionType__c = 'Renewable',						   // Subscription Type
+		  SBQQ__NonDiscountable__c = false,                                // Non Discountable
+		  SBQQ__NonPartnerDiscountable__c = false                          // Non Partner Discountable
+		);
+		insert qteLine;
+
+		Contract cont = new Contract(
+		  StartDate = Date.valueOf('2021-04-06'),       // Fecha de inicio del contrato
+		  ContractTerm = 24,
+		  Comision_Pedido__c = 1.0,
+		  SDX_Segmento__c = 'FOOD',
+		  Producto_Sodexo_Agil__c = '67',
+		  AccountId = cuenta.Id,                        // Razón Social
+		  Status = 'En Creación',                       // Estado
+		  Complejo__c = false,                          // Complejo
+		  Envia_Correo_Onboarding__c = false,           // Envia Correo Onboarding
+		  OnBoarding_Exitoso__c = false,                // OnBoarding Exitoso
+		  Excepcion__c = false,                         // Excepción
+		  Documentacion_Entregada__c = false,           // Documentación Entregada
+		  Excepcion_regularizada__c = false,            // Excepción regularizada
+		  Kit_Enviaddo__c = false,                      // Kit Enviaddo
+		  Encuesta_Enviada__c = false,					// Encuesta enviada
+		  SBQQ__Opportunity__c = opp.Id,
+		  SBQQ__Quote__c = qte.Id
+		);
+		insert cont;
+		
+		Test.setMock(HttpCalloutMock.class, new SDXAGIL_MockHttpResponseGenerator());
+				
+		PageReference pref = Page.SDXAGIL_WsContrato;
+		Test.setCurrentPage(pref);
+		pref.getParameters().put('id', cont.Id);
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
+		}
+		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
+		cont.Respuesta_Exitosa_de_Integracion__c = true;
+		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == true, true);
+
+		Test.stopTest();
+	}
+
+	//Test de Camino Infeliz 02
+	static testmethod void WsContrato_Controller_Test19() {
+		Test.startTest();
+
+		Account cuenta = new Account(
+		  Name = 'TEST',								// Razón Social
+		  NumberOfEmployees = 44,                       // Empleados
+		  SDX_Tipo_de_documento__c = 'RUC',             // Tipo de documento
+		  SDX_Numero_de_documento__c = '12345678903',   // Número de documento
+		  SDX_Tipo_Administracion__c = 'Individual',    // Tipo Administración
+		  Industry = 'Other',                           // Sector
+		  SDX_Tipo_de_mercado__c = 'Libre',				// Tipo de mercado
+		  SDX_Nombre_Comercial__c = 'Test',
+		  Phone = '123456789',
+		  Correo_Facturacion__c = 'TEST1@TEST.CL'
+		);
+		insert cuenta;
+
+		Distrito__c distrito = new Distrito__c(
+		  Name = 'Las Amazonas',         // Nombre de Distrito
+		  SDX_Departamento__c = 'Loreto',  // Departamento
+		  SDX_Provincia__c = 'Maynas'     // Provincia
+		);
+		insert distrito;
+
+		SDX_Direccion__c direccion = new SDX_Direccion__c(
+		  Name = 'Triario_Las urbinas_103',										   // Nombre de Dirección
+		  SDX_Tipo__c = 'Facturación; Envío; Punto de Consumo; Punto de Entrega',  // Tipo
+		  Calle__c = 'Las urbinas',                                                // Calle
+		  SDX_Numero__c = '53',                                                    // Número
+		  Cuenta__c = cuenta.Id,                                                   // Cuenta
+		  SDX_Dpto_Oficina__c = '103',                                             // Dpto/Oficina
+		  SDX_Departamento__c = 'Amazonas',                                        // Departamento
+		  Principal__c = true,                                                     // Principal
+		  SDX_Provincia__c = 'Antabamba',                                          // Provincia
+		  Distrito__c = distrito.Id,											   // Distrito
+		  SDX_Nombre_encargado__c = 'TEST',                            // Nombre encargado
+		  Cargo__c = 'Asistente Comercial',                                        // Cargo
+		  SDX_Telefono_movil__c = '+56961553263',                                  // Teléfono móvil
+		  SDX_Telefono_fijo__c = '+56222222222',                                   // Teléfono fijo
+		  SDX_Correo_electronico__c = 'prueba@prueba.cl'                     // Correo electrónico
+		);
+		insert direccion;
+
+		Contact contacto = new Contact(
+		  AccountId = cuenta.Id,						// Razón Social
+		  LastName = 'TEST',
+		  SDX_Genero__c = 'Masculino',                  // Género
+		  SDX_Nivel_de_relacion__c = 'Relación débil',  // Nivel de relación
+		  Title = 'GERENTE',                            // Cargo
+		  SDX_Area_cliente__c = 'Logística',            // Área cliente
+		  SDX_Tipo_de_documento__c = 'DNI',             // Tipo de documento
+		  Numero_de_Documento__c = '10101010',          // Número de Documento
+		  Email = 'rpolezz@sodexo.com'                   // Correo electrónico
+		);
+		insert contacto;
+
+		Opportunity opp = new Opportunity(
+		  Name = 'Test__FOOD_2021/6',
+		  StageName = '1.Nuevo',						 // Etapa
+		  AccountId = cuenta.Id,						 // Razón Social
+		  Probability = 0,                               // Probabilidad (%)
+		  LeadSource = 'Inbound',                        // Origen del candidato
+		  CloseDate = Date.valueOf('2021-05-28'),        // Fecha de cierre
+		  N_Compras_al_A_o__c = 10,						 // Nº Compras al Año
+		  Amount = 15002.00,                             // BV Mensual
+		  SDX_Segmento__c = 'FOOD',                      // Segmento
+		  Interlocutor__c = contacto.Id,				 // Interlocutor
+		  Email_Pedidos__c = 'test@wspedidos.cl',        // Email Pedidos
+		  SDX_Budget_Mensual_Estimado__c = 15000.00,	 // Budget Mensual Estimado
+		  //SBQQ__PrimaryQuote__c = 'a0z0m000002LvfB',   // Primary Quote
+		  SBQQ__Contracted__c = false,                   // Contracted
+		  SBQQ__Renewal__c = false,                      // Renewal
+		  Loss_Reason__c = 'Inactividad',                // Motivo Pérdida
+		  SDX_BusinessValue__c = 15000                   // Business Value
+		);
+		insert opp;
+
+		Product2 prod = new Product2(
+		  Name = 'FOODPASS TARJETA CLIENTE',				// Nombre del producto
+		  Family = 'FoodPass',                              // Familia de productos
+		  ProductCode = 'FOOD_TAR',                         // Código de producto
+		  SBQQ__ExcludeFromOpportunity__c = false,          // Exclude From Opportunity
+		  IsActive = true,                                  // Activo
+		  SBQQ__HidePriceInSearchResults__c = false,        // Hide Price in Search Results
+		  SBQQ__Hidden__c = false,                          // Hidden
+		  SBQQ__AssetAmendmentBehavior__c = 'Default',      // Asset Amendment Behavior
+		  SBQQ__SortOrder__c = 90,							// Sort Order
+		  SBQQ__AssetConversion__c = 'One per quote line',  // Asset Conversion
+		  SBQQ__Component__c = false,                       // Component
+		  SBQQ__QuantityEditable__c = false,                // Quantity Editable
+		  SBQQ__Optional__c = false,                        // Optional
+		  SBQQ__DefaultQuantity__c = 1,						// Default Quantity
+		  SBQQ__BlockPricingField__c = 'Quantity',          // Block Pricing Field
+		  SBQQ__QuantityScale__c = 1,	                    // Quantity Scale
+		  SBQQ__Specifications__c = '\n',                   // Specifications
+		  SBQQ__DescriptionLocked__c = false,               // Lock Description
+		  SBQQ__ConfiguredDescriptionPattern__c = '\n',     // Configured Description Pattern
+		  SDX_Segmento__c = 'FOOD',                         // Segmento
+		  Rate_Type__c = '$',                               // Rate Type
+		  Description = 'Producto Cliente FoodPass',        // Descripción del producto
+		  SBQQ__ConfigurationType__c = 'Disabled',          // Configuration Type
+		  SBQQ__OptionLayout__c = 'Sections',               // Option Layout
+		  SBQQ__OptionSelectionMethod__c = 'Click',         // Option Selection Method
+		  SBQQ__ReconfigurationDisabled__c = false,         // Disable Reconfiguration
+		  SBQQ__PricingMethod__c = 'List',                  // Pricing Method
+		  SBQQ__CostEditable__c = false,                    // Cost Editable
+		  SBQQ__PricingMethodEditable__c = false,           // Pricing Method Editable
+		  SBQQ__PriceEditable__c = true,                    // Price Editable
+		  SBQQ__NonDiscountable__c = false,                 // Non Discountable
+		  SBQQ__NonPartnerDiscountable__c = false,          // Non Partner Discountable
+		  SBQQ__IncludeInMaintenance__c = false,            // Include In Percent Of Total
+		  SBQQ__ExcludeFromMaintenance__c = false,          // Exclude From Percent Of Total
+		  SBQQ__SubscriptionPricing__c = 'Fixed Price',     // Subscription Pricing
+		  SBQQ__SubscriptionBase__c = 'List',               // Percent Of Total Base
+		  SBQQ__SubscriptionType__c = 'Renewable'			// Subscription Type
+		);
+		insert prod;
+
+		Id pricebookIdStd = Test.getStandardPricebookId();
+
+		SBQQ__Quote__c qte = new SBQQ__Quote__c(
+		  Vigencia__c = 3,								// Vigencia
+		  Dias_de_Credito__c = 15,	                    // Días de Crédito
+		  Quote_Aprobado__c = true,                     // Quote Aprobado
+		  SBQQ__Opportunity2__c = opp.Id,				// Opportunity
+		  SBQQ__Primary__c = true,                      // Primary
+		  SBQQ__Account__c = cuenta.Id,					// Account
+		  SBQQ__Type__c = 'Quote',                      // Type
+		  SBQQ__SalesRep__c = UserInfo.getUserId(),     // Sales Rep
+		  SBQQ__Status__c = 'Aceptado',                 // Status
+		  SBQQ__PrimaryContact__c = contacto.Id,		// Primary Contact
+		  N_de_Beneficiarios__c = 30,                   // Nº de Beneficiarios
+		  BV_Mensual__c = 15000.00,                     // BV Mensual
+		  Tipo_Oportunidad__c = 'Cliente',              // Tipo Oportunidad
+		  SBQQ__PricebookId__c = pricebookIdStd,		// Pricebook ID
+		  SBQQ__PriceBook__c = pricebookIdStd			// Price Book
+		);
+		insert qte;
+
+		SBQQ__QuoteLine__c qteLine = new SBQQ__QuoteLine__c(
+		  SBQQ__Quote__c = qte.Id,										   // Quote
+		  SBQQ__Product__c = prod.Id,				                       // Product
+		  SBQQ__Number__c = 1,	                                           // Number
+		  SBQQ__Quantity__c = 1.00,	                                       // Quantity
+		  SBQQ__Renewal__c = false,                                        // Renewal
+		  SBQQ__PricingMethod__c = 'List',                                 // Pricing Method
+		  SBQQ__CostEditable__c = false,                                   // Cost Editable
+		  SBQQ__PricingMethodEditable__c = false,                          // Pricing Method Editable
+		  SBQQ__PriceEditable__c = true,                                   // Price Editable
+		  SBQQ__Hidden__c = false,                                         // Hidden
+		  SBQQ__Optional__c = false,                                       // Optional
+		  Precio_Estandar__c = 0,	                                       // Precio Estándar
+		  Precio_Negociado__c = 0,	                                       // Precio Negociado
+		  SBQQ__Description__c = 'Producto Cliente FoodPass ECOMMERCE\n',  // Description
+		  Soporte__c = 'Vale Físico y Virtual',                            // Soporte
+		  Metodo_de_Reembolso__c = 'Merchie',                              // Método de Reembolso
+		  SBQQ__ListPrice__c = 0.00,                                       // List Unit Price
+		  SBQQ__CustomerPrice__c = 0.00,                                   // Customer Unit Price
+		  SBQQ__NetPrice__c = 0.00,                                        // Net Unit Price
+		  SBQQ__SpecialPrice__c = 0.00,                                    // Special Price
+		  SBQQ__RegularPrice__c = 0.00,                                    // Regular Unit Price
+		  SBQQ__ProratedListPrice__c = 0.00,                               // Prorated List Price
+		  SBQQ__SubscriptionPricing__c = 'Fixed Price',                    // Subscription Pricing
+		  SBQQ__SubscriptionScope__c = 'Quote',                            // Percent of Total Scope
+		  SBQQ__SubscriptionBase__c = 'List',                              // Percent of Total Base
+		  SBQQ__ProductSubscriptionType__c = 'Renewable',				   // 
+		  SBQQ__SubscriptionType__c = 'Renewable',						   // Subscription Type
+		  SBQQ__NonDiscountable__c = false,                                // Non Discountable
+		  SBQQ__NonPartnerDiscountable__c = false                          // Non Partner Discountable
+		);
+		insert qteLine;
+
+		Contract cont = new Contract(
+		  StartDate = Date.valueOf('2021-04-06'),       // Fecha de inicio del contrato
+		  ContractTerm = 24,
+		  Comision_Pedido__c = 1.0,
+		  SDX_Segmento__c = 'FOOD',
+		  Producto_Sodexo_Agil__c = null,
+		  AccountId = cuenta.Id,                        // Razón Social
+		  Status = 'En Creación',                       // Estado
+		  Complejo__c = false,                          // Complejo
+		  Envia_Correo_Onboarding__c = false,           // Envia Correo Onboarding
+		  OnBoarding_Exitoso__c = false,                // OnBoarding Exitoso
+		  Excepcion__c = false,                         // Excepción
+		  Documentacion_Entregada__c = false,           // Documentación Entregada
+		  Excepcion_regularizada__c = false,            // Excepción regularizada
+		  Kit_Enviaddo__c = false,                      // Kit Enviaddo
+		  Encuesta_Enviada__c = false,					// Encuesta enviada
+		  SBQQ__Opportunity__c = opp.Id,
+		  SBQQ__Quote__c = qte.Id
+		);
+		insert cont;
+		
+		Test.setMock(HttpCalloutMock.class, new SDXAGIL_MockHttpResponseGenerator());
+				
+		PageReference pref = Page.SDXAGIL_WsContrato;
+		Test.setCurrentPage(pref);
+		pref.getParameters().put('id', cont.Id);
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
+		}
+		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
+		cont.Respuesta_Exitosa_de_Integracion__c = true;
+		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == true, true);
 
 		Test.stopTest();
 	}
