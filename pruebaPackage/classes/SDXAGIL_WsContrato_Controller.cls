@@ -78,76 +78,84 @@ public class SDXAGIL_WsContrato_Controller  {
 		}
 
 		//Invoco a clase SOQL para obtener los datos de la Oportunidad y Cotización.
-		datosContrato = consultasSOQL.buscarDatosContrato(currentRecordId);
+		if(currentRecordId != null){
+			datosContrato = consultasSOQL.buscarDatosContrato(currentRecordId);
 
-		//Si existen datos del contrato hacer llamada a servicio Web.
-		if(datosContrato!=null){
+			//Si existen datos del contrato hacer llamada a servicio Web.
+			if(datosContrato!=null){
 				
-			//Invoco a clase SOQL para obtener listado de Productos
-			if(String.isNotBlank(datosContrato.SBQQ__Quote__c)){
-				listaProductos = consultasSOQL.buscarProductos(datosContrato.SBQQ__Quote__c);
-			}
+				//Invoco a clase SOQL para obtener listado de Productos
+				if(String.isNotBlank(datosContrato.SBQQ__Quote__c)){
+					listaProductos = consultasSOQL.buscarProductos(datosContrato.SBQQ__Quote__c);
+				}
 				
-			//Invoco a clase SOQL para obtener dirección de la cuenta
-			if(String.isNotBlank(datosContrato.AccountId)){
-				datosDireccion = consultasSOQL.buscarDireccion(datosContrato.AccountId);
-			}
+				//Invoco a clase SOQL para obtener dirección de la cuenta
+				if(String.isNotBlank(datosContrato.AccountId)){
+					datosDireccion = consultasSOQL.buscarDireccion(datosContrato.AccountId);
+				}
 
-			//Agrego en una lista código de los productos relacionados a una Quote
-			List<String> listaCodigoProductos = new List<String>();
-			for(SBQQ__QuoteLine__c producto : listaProductos){
-				listaCodigoProductos.add(producto.SBQQ__Product__r.ProductCode);
-			}
+				//Agrego en una lista código de los productos relacionados a una Quote
+				List<String> listaCodigoProductos = new List<String>();
+				for(SBQQ__QuoteLine__c producto : listaProductos){
+					listaCodigoProductos.add(producto.SBQQ__Product__r.ProductCode);
+				}
 
-			Boolean productoAutorizado = consultasSOQL.checkProductosEnvioWs(listaCodigoProductos);
-			//if(Test.isRunningTest()){
-				//productoAutorizado = true;
-			//}
+				Boolean productoAutorizado = consultasSOQL.checkProductosEnvioWs(listaCodigoProductos);
+				//if(Test.isRunningTest()){
+					//productoAutorizado = true;
+				//}
 
-			SDXAGIL_Helper_Class helper = new SDXAGIL_Helper_Class();
-			List<String> errores = helper.revisarCamposObligatorios(datosContrato, listaProductos, datosDireccion, idProducto);
+				SDXAGIL_Helper_Class helper = new SDXAGIL_Helper_Class();
+				List<String> errores = helper.revisarCamposObligatorios(datosContrato, listaProductos, datosDireccion, idProducto);
 				
-			if(datosContrato.Respuesta_Exitosa_de_Integracion__c){
-				isEnviando = false;
-				isError = false;
-				isOk = false;
-				isObteniendoProductos = false;
-				isEnviada = true;
-			}else{
-				if(errores.size() > 0){
-					//System.debug(errores);
-					for(String errorMsj : errores){
-						respuestaMensajeError += '- '+errorMsj +'\n\n';
-					}
-					//respuestaMensajeError = 'Existen Errores';
+				if(datosContrato.Respuesta_Exitosa_de_Integracion__c){
 					isEnviando = false;
-					isError = true;
-					isObteniendoProductos = false;
+					isError = false;
 					isOk = false;
-				}else if(!productoAutorizado){
-					respuestaMensajeError = 'Los productos utilizados en la Quote no se encuentran autorizados para ser enviados al Servicio Web.';
-					isEnviando = false;
-					isError = true;
 					isObteniendoProductos = false;
-					isOk = false;
-				}else if(String.isBlank(datosContrato.Producto_Sodexo_Agil__c)){
-					respuestaMensajeError = 'Para enviar el contrato debe seleccionar un Producto Sodexo Agil.';
-					isEnviando = false;
-					isError = true;
-					isObteniendoProductos = false;
-					isOk = false;
+					isEnviada = true;
 				}else{
-					if(datosContrato.Status == 'En Creación'){
-						//ConsumirServicioWebProductListar();
-						ConsumirServicioWeb();
-					}else{
-						respuestaMensajeError = 'Solo se puede consumir este servicio si el Estado de Contrato es "En Creación".';
+					if(errores.size() > 0){
+						//System.debug(errores);
+						for(String errorMsj : errores){
+							respuestaMensajeError += '- '+errorMsj +'\n\n';
+						}
+						//respuestaMensajeError = 'Existen Errores';
 						isEnviando = false;
 						isError = true;
 						isObteniendoProductos = false;
 						isOk = false;
+					}else if(!productoAutorizado){
+						respuestaMensajeError = 'Los productos utilizados en la Quote no se encuentran autorizados para ser enviados al Servicio Web.';
+						isEnviando = false;
+						isError = true;
+						isObteniendoProductos = false;
+						isOk = false;
+					}else if(String.isBlank(datosContrato.Producto_Sodexo_Agil__c)){
+						respuestaMensajeError = 'Para enviar el contrato debe seleccionar un Producto Sodexo Agil.';
+						isEnviando = false;
+						isError = true;
+						isObteniendoProductos = false;
+						isOk = false;
+					}else{
+						if(datosContrato.Status == 'En Creación'){
+							//ConsumirServicioWebProductListar();
+							ConsumirServicioWeb();
+						}else{
+							respuestaMensajeError = 'Solo se puede consumir este servicio si el Estado de Contrato es "En Creación".';
+							isEnviando = false;
+							isError = true;
+							isObteniendoProductos = false;
+							isOk = false;
+						}
 					}
 				}
+			}else{
+				respuestaMensajeError = 'No se puede invocar metodo sin ID';
+				isEnviando = false;
+				isError = true;
+				isObteniendoProductos = false;
+				isOk = false;
 			}
         }else{
 			respuestaMensajeError = 'No existen datos disponibles con este contrato';

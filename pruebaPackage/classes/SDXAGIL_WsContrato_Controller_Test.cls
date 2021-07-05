@@ -261,11 +261,12 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
-		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
-
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
+		}
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == false, true);
 
@@ -292,11 +293,12 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
-		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
-
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
+		}
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == false, true);
 
@@ -338,11 +340,12 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
-		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
-
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
+		}
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == false, true);
 
@@ -377,11 +380,12 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
-		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
-
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
+		}
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == false, true);
 
@@ -402,11 +406,12 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
-		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
-
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
+		}
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == false, true);
 
 		Test.stopTest();
@@ -423,13 +428,14 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
-		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
 
-		wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-
+			wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+		}
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == false, true);
 
@@ -447,12 +453,14 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
-		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
 
-		wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+		}
 
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == false, true);
@@ -469,13 +477,14 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('test', null);
-		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
 
-		wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-
+			wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+		}
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == false, true);
 
@@ -493,13 +502,14 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
-		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
 
-		wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-
+			wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+		}
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == false, true);
 
@@ -517,13 +527,14 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
-		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
 
-		wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-
+			wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+		}
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == false, true);
 
@@ -541,12 +552,14 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
-		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
 
-		wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+		}
 
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == false, true);
@@ -566,12 +579,13 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
 		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
+		if(cont.Id != null){
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
 
-		wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-
+			wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+		}
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == false, true);
 
@@ -590,13 +604,14 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
-		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
 
-		wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-
+			wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+		}
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == true, true);
 
 		Test.stopTest();
@@ -635,11 +650,12 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		PageReference pref = Page.SDXAGIL_WsContrato;
 		Test.setCurrentPage(pref);
 		pref.getParameters().put('id', cont.Id);
-		ApexPages.StandardController apst=new ApexPages.StandardController(cont);
-		SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
-		wsContrato.guardarRespuesta();
-		wsContrato.redirect();
-	
+		if(cont.Id != null){
+			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
+			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
+			wsContrato.guardarRespuesta();
+			wsContrato.redirect();
+		}
 		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
 		cont.Respuesta_Exitosa_de_Integracion__c = true;
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == true, true);
