@@ -17,30 +17,30 @@ public class SDXAGIL_ConsultasSOQL  {
 	public SDXAGIL_ConsultasSOQL(){
 	}
 
-	public static API_SodexoAgil__mdt apiSodexoAgil { 
-		get {
-			if ( apiSodexoAgil == null )
-				apiSodexoAgil = [SELECT url_client_registrar__c, tipo_client_registrar__c 
-									FROM API_SodexoAgil__mdt WHERE MasterLabel = 'API_SodexoAgil']; 
-			return apiSodexoAgil;
-		} set; }
+	//public static API_SodexoAgil__mdt apiSodexoAgil { 
+		//get {
+			//if ( apiSodexoAgil == null )
+				//apiSodexoAgil = [SELECT url_client_registrar__c, tipo_client_registrar__c 
+									//FROM API_SodexoAgil__mdt WHERE MasterLabel = 'API_SodexoAgil']; 
+			//return apiSodexoAgil;
+		//} set; }
 
-	public static API_SodexoAgil__mdt apiSodexoAgilToken { 
-		get {
-			if ( apiSodexoAgilToken == null )
-				apiSodexoAgilToken = [SELECT url_token__c, username_token__c, 
-									  password_token__c, tipo_token__c 
-									  FROM API_SodexoAgil__mdt WHERE MasterLabel = 'API_SodexoAgil']; 
-			return apiSodexoAgilToken;
-		} set; }
+	//public static API_SodexoAgil__mdt apiSodexoAgilToken { 
+		//get {
+			//if ( apiSodexoAgilToken == null )
+				//apiSodexoAgilToken = [SELECT url_token__c, username_token__c, 
+									  //password_token__c, tipo_token__c 
+									  //FROM API_SodexoAgil__mdt WHERE MasterLabel = 'API_SodexoAgil']; 
+			//return apiSodexoAgilToken;
+		//} set; }
 
-	public static SodexoAgil_ProductsCheck__mdt prodCheck { 
-		get {
-			if ( prodCheck == null )
-				prodCheck = [SELECT activo__c 
-							 FROM SodexoAgil_ProductsCheck__mdt WHERE MasterLabel = 'FOOD_TAR']; 
-			return prodCheck;
-		} set; }
+	//public static SodexoAgil_ProductsCheck__mdt prodCheck { 
+		//get {
+			//if ( prodCheck == null )
+				//prodCheck = [SELECT activo__c 
+							 //FROM SodexoAgil_ProductsCheck__mdt WHERE MasterLabel = 'FOOD_TAR']; 
+			//return prodCheck;
+		//} set; }
 
 	//SOQL Query para buscar los datos de Contrato
 	public Contract buscarDatosContrato(String idContrato){
@@ -104,7 +104,7 @@ public class SDXAGIL_ConsultasSOQL  {
 
 	//Retorna datos del Endpoint, Usuario, Password y Tipo para el consumo de datos del Token
 	Public API_SodexoAgil__mdt buscarDatosTokenApiSodexoAgil(String nombreMdt){
-		//API_SodexoAgil__mdt apiSodexoAgilToken;
+		API_SodexoAgil__mdt apiSodexoAgilToken;
 		apiSodexoAgilToken = [SELECT url_token__c, username_token__c, 
 						password_token__c, tipo_token__c 
 						FROM API_SodexoAgil__mdt 
@@ -114,7 +114,7 @@ public class SDXAGIL_ConsultasSOQL  {
 
 	//Retorna datos del Endpoint y Tipo para el servicio Client/Registrar
 	public API_SodexoAgil__mdt buscarDatosClientRegistrarApiSodexoAgil(String nombreMdt){
-		//API_SodexoAgil__mdt apiSodexoAgil;
+		API_SodexoAgil__mdt apiSodexoAgil;
 		apiSodexoAgil = [SELECT url_client_registrar__c, tipo_client_registrar__c 
 						FROM API_SodexoAgil__mdt 
 						WHERE DeveloperName =: nombreMdt];
