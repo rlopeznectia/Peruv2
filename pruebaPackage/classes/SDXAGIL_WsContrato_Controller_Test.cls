@@ -218,7 +218,7 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		Test.startTest();
 
 		Account cuenta = new Account(
-		  Name = 'TEST',								// Razón Social
+		  Name = 'TEST 3',								// Razón Social
 		  NumberOfEmployees = 44,                       // Empleados
 		  SDX_Tipo_de_documento__c = 'RUC',             // Tipo de documento
 		  SDX_Numero_de_documento__c = '12345678903',   // Número de documento
@@ -227,7 +227,7 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		  SDX_Tipo_de_mercado__c = 'Libre',				// Tipo de mercado
 		  SDX_Nombre_Comercial__c = 'Test',
 		  Phone = '123456789',
-		  Correo_Facturacion__c = 'TEST@TEST.CL'
+		  Correo_Facturacion__c = 'TEST3@TEST.CL'
 		);
 		insert cuenta;
 
@@ -259,14 +259,14 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 
 		Contact contacto = new Contact(
 		  AccountId = cuenta.Id,						// Razón Social
-		  LastName = 'TEST',
+		  LastName = 'TEST 3',
 		  SDX_Genero__c = 'Masculino',                  // Género
 		  SDX_Nivel_de_relacion__c = 'Relación débil',  // Nivel de relación
 		  Title = 'GERENTE',                            // Cargo
 		  SDX_Area_cliente__c = 'Logística',            // Área cliente
 		  SDX_Tipo_de_documento__c = 'DNI',             // Tipo de documento
 		  Numero_de_Documento__c = '10101010',          // Número de Documento
-		  Email = 'rpolez@sodexo.com'                   // Correo electrónico
+		  Email = 'rpolez3@sodexo.com'                   // Correo electrónico
 		);
 		insert contacto;
 
