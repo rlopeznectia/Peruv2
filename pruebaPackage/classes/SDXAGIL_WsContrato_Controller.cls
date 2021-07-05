@@ -67,6 +67,13 @@ public class SDXAGIL_WsContrato_Controller  {
 			prueba = 'algo 2';
 		}
 
+		//TEST2
+		API_SodexoAgil__mdt apiSodexoClienteRegistrar = consultasSOQL.buscarDatosClientRegistrarApiSodexoAgil('API_SodexoAgil');
+		if(apiSodexoClienteRegistrar.url_client_registrar__c == 'http://159.138.115.224/newsodexoagilapi/api/client/registrar'){
+			String prueba = 'algo';
+			prueba = 'algo 2';
+		}
+
 		//Invoco a clase SOQL para obtener los datos de la Oportunidad y Cotización.
 		datosContrato = consultasSOQL.buscarDatosContrato(currentRecordId);
 
