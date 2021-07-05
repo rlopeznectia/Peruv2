@@ -3374,7 +3374,7 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 			wsContrato.guardarRespuesta();
 			wsContrato.redirect();
 		}
-		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
+		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST-PROD-NOK'];
 		cont.Respuesta_Exitosa_de_Integracion__c = true;
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == true, true);
 
@@ -3592,6 +3592,13 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		//SDXAGIL_WsContrato_Controller.respuesta = 'ALGO';
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == true, true);
 
+		Test.stopTest();
+	}
+
+	//Test de camino Infeliz 03
+	static testmethod void WsContrato_Controller_Test20() {
+		Test.startTest();
+		
 		Test.stopTest();
 	}
 }
