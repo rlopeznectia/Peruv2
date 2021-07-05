@@ -101,8 +101,8 @@ public class SDXAGIL_WsContrato_Controller  {
 			}
 
 			Boolean productoAutorizado = consultasSOQL.checkProductosEnvioWs(listaCodigoProductos);
-			//if(Test.isRunningTest()){
-				//productoAutorizado = true;
+			//if(Test.isRunningTest() && datosContrato.Account.Name == 'TEST-PROD-NOK'){
+				//productoAutorizado = false;
 			//}
 
 			SDXAGIL_Helper_Class helper = new SDXAGIL_Helper_Class();

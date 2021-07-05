@@ -3172,7 +3172,7 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 	//Test de Camino Infeliz 01
 	static testmethod void WsContrato_Controller_Test18() {
 		Account cuenta = new Account(
-		  Name = 'TEST',								// Razón Social
+		  Name = 'TEST-PROD-NOK',								// Razón Social
 		  NumberOfEmployees = 44,                       // Empleados
 		  SDX_Tipo_de_documento__c = 'RUC',             // Tipo de documento
 		  SDX_Numero_de_documento__c = '12345678903',   // Número de documento
@@ -3360,6 +3360,12 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		  SBQQ__Quote__c = qte.Id
 		);
 		insert cont;
+
+		String userId = UserInfo.getUserId();
+		
+		User usuario = [SELECT Id, SDX_DNI__c FROM User where Id =: userId];
+		usuario.SDX_DNI__c = '17375693';
+		update usuario;
 		
 		Test.startTest();
 
@@ -3374,7 +3380,7 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 			wsContrato.guardarRespuesta();
 			wsContrato.redirect();
 		}
-		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST'];
+		cont = [SELECT Id, Name, Respuesta_Exitosa_de_Integracion__c, AccountId FROM Contract WHERE Account.Name = 'TEST-PROD-NOK'];
 		cont.Respuesta_Exitosa_de_Integracion__c = true;
 		System.assert(cont.Respuesta_Exitosa_de_Integracion__c == true, true);
 
