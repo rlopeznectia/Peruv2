@@ -682,7 +682,7 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		SDXAGIL_ConsultasSOQL consultasSOQL = new SDXAGIL_ConsultasSOQL();
 
 		List<SBQQ__QuoteLine__c> listaProductos = consultasSOQL.buscarProductos(cont.SBQQ__Quote__c);
-		Contract datosContrato = consultasSOQL.buscarDatosContrato(cont.Id, cont.Id);
+		Contract datosContrato = consultasSOQL.buscarDatosContrato(cont.Id);
 		List<SDX_Direccion__c> listaDir = consultasSOQL.buscarDireccion(cuenta.Id);
 
 		SDXAGIL_Helper_Class clase = new SDXAGIL_Helper_Class();

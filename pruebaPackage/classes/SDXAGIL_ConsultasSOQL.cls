@@ -43,7 +43,7 @@ public class SDXAGIL_ConsultasSOQL  {
 		//} set; }
 
 	//SOQL Query para buscar los datos de Contrato
-	public Contract buscarDatosContrato(String idContrato, ID contractId){
+	public Contract buscarDatosContrato(String idContrato){
 		try{
 			System.debug('ID Contrato = '+idContrato);
 			Contract datosContrato2 = [SELECT Id, Name, 
@@ -62,9 +62,9 @@ public class SDXAGIL_ConsultasSOQL  {
 									  StartDate, EndDate
 									  FROM Contract];
 			System.debug('Contrato Result 1 '+datosContrato2);
-			if(idContrato == null){
-				idContrato = String.valueOf(contractId);
-			}
+			//if(idContrato == null){
+				//idContrato = String.valueOf(contractId);
+			//}
 			Contract datosContrato = [SELECT Id, Name, 
 									  Account.SDX_Tipo_de_documento__c, Account.SDX_Numero_de_documento__c,
 									  Account.Name, Account.SDX_Nombre_Comercial__c,
