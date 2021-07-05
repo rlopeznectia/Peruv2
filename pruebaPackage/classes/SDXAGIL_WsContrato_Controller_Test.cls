@@ -779,7 +779,7 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		//Contract cont = [SELECT Id, Name, SBQQ__Quote__c, SBQQ__Opportunity__c, AccountId, Respuesta_Exitosa_de_Integracion__c FROM Contract WHERE Account.Name = 'TEST'];
 		
 		//Account cuenta = [SELECT Id FROM Account WHERE Id =: cont.AccountId];
-		delete cuenta;
+		//delete cuenta;
 
 		Test.setMock(HttpCalloutMock.class, new SDXAGIL_MockHttpResponseGenerator());
 				
