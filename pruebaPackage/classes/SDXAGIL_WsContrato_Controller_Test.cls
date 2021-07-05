@@ -13,7 +13,7 @@
 @isTest
 public class SDXAGIL_WsContrato_Controller_Test  {
 	@TestSetup 
-	static void setup(){
+	public static void setup(){
 		Account cuenta = new Account(
 		  Name = 'TEST',								// Razón Social
 		  NumberOfEmployees = 44,                       // Empleados
