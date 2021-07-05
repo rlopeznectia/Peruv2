@@ -62,7 +62,7 @@ public class SDXAGIL_WsContrato_Controller  {
 
 		//TEST
 		API_SodexoAgil__mdt apiSodexoAgilToken = consultasSOQL.buscarDatosTokenApiSodexoAgil('API_SodexoAgil');
-		if(apiSodexoAgilToken != null){
+		if(apiSodexoAgilToken.username_token__c == 'SALESFORCE'){
 			String prueba = 'algo';
 			prueba = 'algo 2';
 		}
