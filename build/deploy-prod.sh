@@ -9,7 +9,7 @@ sfdx force: mdapi:convert -d deploy_prod -r pruebaPackage
 sfdx config:set defaultusername=consultor_force@nectia.com.peru.prod
 #sfdx force:mdapi:retrieve:report -u consultor_force+amicar@nectia.com.pruebasci
 sfdx force:mdapi:deploy -d pruebaPackage -u my-hub-Prod -w 10 #-l RunLocalTests -w 33 --verbose --loglevel fatal
-sfdx force:mdapi:deploy:report
+#sfdx force:mdapi:deploy:report
 #-l RunSpecifiedTests -r AMICAR_ChecklistGetJSONTest -w 33 --verbose --loglevel fatal
 #-l RunLocalTests -d src -u my-hub-orgPruebasCI --verbose --loglevel fatal #Para todos por proyectos NO AMICAR!!!
 #r: donde se guardara el archivo.
