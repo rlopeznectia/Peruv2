@@ -50,7 +50,7 @@ public class SDXAGIL_WsContrato_Controller  {
 		idProducto = '';
 		listaProductos = new List<SBQQ__QuoteLine__c>();
 		datosDireccion = new List<SDX_Direccion__c>();
-
+		ID contractId = String.valueOf((Contract) controller.getRecord());
 		//Obtengo Id de Contrato.
 		currentRecordId = ApexPages.CurrentPage().getparameters().get('id');
 		if(currentRecordId == null){
@@ -78,7 +78,7 @@ public class SDXAGIL_WsContrato_Controller  {
 		}
 
 		//Invoco a clase SOQL para obtener los datos de la Oportunidad y Cotización.
-		datosContrato = consultasSOQL.buscarDatosContrato(currentRecordId);
+		datosContrato = consultasSOQL.buscarDatosContrato(currentRecordId, contractId);
 
 		//Si existen datos del contrato hacer llamada a servicio Web.
 		if(datosContrato!=null){
