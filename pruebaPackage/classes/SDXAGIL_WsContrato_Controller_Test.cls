@@ -426,8 +426,9 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		Test.setMock(HttpCalloutMock.class, new SDXAGIL_MockHttpResponseGenerator001());
 				
 		PageReference pref = Page.SDXAGIL_WsContrato;
-		Test.setCurrentPage(pref);
+		
 		pref.getParameters().put('id', cont.Id);
+		Test.setCurrentPage(pref);
 		if(cont.Id != null){
 			ApexPages.StandardController apst=new ApexPages.StandardController(cont);
 			SDXAGIL_WsContrato_Controller wsContrato = new SDXAGIL_WsContrato_Controller(apst);
