@@ -204,8 +204,8 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		);
 		insert contrato;
 
-		SDXAGIL_ConsultasSOQL.apiSodexoAgil = (API_SodexoAgil__mdt) JSON.deserialize( '{"url_client_registrar__c":"http://159.138.115.224/newsodexoagilapi/api/client/registrar", "tipo_client_registrar__c":"POST"}', API_SodexoAgil__mdt.class );
-		SDXAGIL_ConsultasSOQL.apiSodexoAgilToken = (API_SodexoAgil__mdt) JSON.deserialize( '{"url_token__c":"http://159.138.115.224/newsodexoagilapi/api/client/registrar", "username_token__c":"SALESFORCE","password_token__c":"PASSWORD","tipo_token__c":"POST"}', API_SodexoAgil__mdt.class );
+		//SDXAGIL_ConsultasSOQL.apiSodexoAgil = (API_SodexoAgil__mdt) JSON.deserialize( '{"url_client_registrar__c":"http://159.138.115.224/newsodexoagilapi/api/client/registrar", "tipo_client_registrar__c":"POST"}', API_SodexoAgil__mdt.class );
+		//SDXAGIL_ConsultasSOQL.apiSodexoAgilToken = (API_SodexoAgil__mdt) JSON.deserialize( '{"url_token__c":"http://159.138.115.224/newsodexoagilapi/api/client/registrar", "username_token__c":"SALESFORCE","password_token__c":"PASSWORD","tipo_token__c":"POST"}', API_SodexoAgil__mdt.class );
 		//SDXAGIL_ConsultasSOQL.prodCheck = (SodexoAgil_ProductsCheck__mdt) JSON.deserialize( '{activo__c":true}', SodexoAgil_ProductsCheck__mdt.class );
 		//SDXAGIL_MetadataCoverage_Test.setMetadata(
 			//'SELECT MasterLabel, activo__c FROM SodexoAgil_ProductsCheck__mdt WHERE DeveloperName = \'FOOD_TAR\'',
@@ -689,6 +689,27 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 		String jsonString = clase.armarJsonServicioClientRegistrar('Test', datosContrato, listaProductos, listaDir, '1');
 		
 		System.assert(jsonString != null && jsonString != '', true);
+		Test.stopTest();
+	}
+
+	static testmethod void WsContrato_Controller_Test17() {
+		Test.startTest();
+		SDXAGIL_ClientRegistrarResp_JSON claseJson = new SDXAGIL_ClientRegistrarResp_JSON();
+		
+		claseJson.ErrorCode = 'algo';
+		claseJson.EsSatisfactorio = 1;
+		claseJson.Mensaje = 'algo';
+		claseJson.message = 'algo';
+		
+		SDXAGIL_ClientRegistrarResp_JSON.Errors errorJson = new SDXAGIL_ClientRegistrarResp_JSON.Errors();
+		errorJson.property = 'algo';
+		errorJson.description = 'algo';
+		//claseJson.errors.add(errorJson);
+
+		claseJson = new SDXAGIL_ClientRegistrarResp_JSON();
+		String jsonTest = '{"Message": "Authorization has been denied for this request."}';
+		claseJson = SDXAGIL_ClientRegistrarResp_JSON.parse(jsonTest);
+
 		Test.stopTest();
 	}
 }
