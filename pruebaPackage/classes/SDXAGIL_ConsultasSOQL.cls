@@ -46,6 +46,22 @@ public class SDXAGIL_ConsultasSOQL  {
 	public Contract buscarDatosContrato(String idContrato){
 		try{
 			System.debug('ID Contrato = '+idContrato);
+			Contract datosContrato2 = [SELECT Id, Name, 
+									  Account.SDX_Tipo_de_documento__c, Account.SDX_Numero_de_documento__c,
+									  Account.Name, Account.SDX_Nombre_Comercial__c,
+									  Account.Parent.Name, Account.Phone,
+									  SBQQ__Opportunity__r.Email_Pedidos__c,  Account.Correo_Facturacion__c,
+									  Account.Correo_Facturacion_Adicional__c, Owner.SDX_DNI__c,
+									  CustomerSignedDate, Account.Owner.Name,
+									  SBQQ__Opportunity__c, SBQQ__Quote__c,
+									  Account.Es_Internacional__c, SBQQ__Opportunity__r.Owner.Name,
+									  SBQQ__Quote__r.Vigencia__c,
+									  Status, Respuesta_Exitosa_de_Integracion__c,
+									  AccountId, Producto_Sodexo_Agil__c,
+									  SBQQ__Quote__r.Dias_de_Credito__c, Comision_Pedido__c,
+									  StartDate, EndDate
+									  FROM Contract];
+			System.debug('Contrato Result 1 '+datosContrato2);
 			Contract datosContrato = [SELECT Id, Name, 
 									  Account.SDX_Tipo_de_documento__c, Account.SDX_Numero_de_documento__c,
 									  Account.Name, Account.SDX_Nombre_Comercial__c,
@@ -62,6 +78,7 @@ public class SDXAGIL_ConsultasSOQL  {
 									  StartDate, EndDate
 									  FROM Contract
 									  WHERE Id = :idContrato];
+			System.debug('Contrato Result 2 '+datosContrato2);
 			return datosContrato;
 		}catch(Exception ex){
 			System.debug('ERROR AL EJECUTAR SOQL');
