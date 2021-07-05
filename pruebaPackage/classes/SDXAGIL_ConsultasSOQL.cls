@@ -34,6 +34,14 @@ public class SDXAGIL_ConsultasSOQL  {
 			return apiSodexoAgilToken;
 		} set; }
 
+	public static SodexoAgil_ProductsCheck__mdt prodCheck { 
+		get {
+			if ( prodCheck == null )
+				prodCheck = [SELECT activo__c 
+							 FROM SodexoAgil_ProductsCheck__mdt WHERE MasterLabel = 'FOOD_TAR']; 
+			return prodCheck;
+		} set; }
+
 	//SOQL Query para buscar los datos de Contrato
 	public Contract buscarDatosContrato(String idContrato){
 		try{

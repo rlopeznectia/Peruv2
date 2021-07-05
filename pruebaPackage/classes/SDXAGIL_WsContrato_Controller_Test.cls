@@ -206,7 +206,7 @@ public class SDXAGIL_WsContrato_Controller_Test  {
 
 		SDXAGIL_ConsultasSOQL.apiSodexoAgil = (API_SodexoAgil__mdt) JSON.deserialize( '{"url_client_registrar__c":"http://159.138.115.224/newsodexoagilapi/api/client/registrar", "tipo_client_registrar__c":"POST"}', API_SodexoAgil__mdt.class );
 		SDXAGIL_ConsultasSOQL.apiSodexoAgilToken = (API_SodexoAgil__mdt) JSON.deserialize( '{"url_token__c":"http://159.138.115.224/newsodexoagilapi/api/client/registrar", "username_token__c":"SALESFORCE","password_token__c":"PASSWORD","tipo_token__c":"POST"}', API_SodexoAgil__mdt.class );
-
+		SDXAGIL_ConsultasSOQL.prodCheck = (SodexoAgil_ProductsCheck__mdt) JSON.deserialize( '{activo__c":true}', SodexoAgil_ProductsCheck__mdt.class );
 	}
 
 	//Test de Error - Error Campos Obligatorios
