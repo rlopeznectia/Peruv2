@@ -23,9 +23,5 @@
         <members>SDXAGIL_WsContrato</members>
         <name>ApexPage</name>
     </types>
-    <types>
-        <members>*</members>
-        <name>CustomMetadata</name>
-    </types>
     <version>52.0</version>
 </Package>
